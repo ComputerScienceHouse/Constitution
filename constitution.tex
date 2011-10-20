@@ -1,0 +1,504 @@
+% BEFORE CHANGES ARE MADE TO THIS DOCUMENT:
+% -References will be automatically updated if any part is added, deleted, etc. 
+%  However, if a sub part is moved to a different part, its references must be 
+%  changed.
+% -This document must be ratified by the House (as per the Constitution), 
+%  then printed, signed, notarized, and placed in the House filing cabinet
+%  if changes are to be officialized.
+
+\documentclass{article}
+% The xr package allows external references
+\usepackage{xr}
+
+% This package is useful for debugging label problems 
+% Comment out in final revision
+%\usepackage{showkeys}
+
+% Define the external document to be bylaws for cross referencing purposes
+\externaldocument{bylaws}
+
+% Title page information
+\title{Computer Science House Constitution}
+\author{Computer Science House Executive Board}
+% Last Modified Date
+\newcommand{\datechanged}{Proposed: \today}
+\date{\datechanged}
+
+% Fix margins
+\setlength{\evensidemargin}{0in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\textwidth}{6.5in}
+\setlength{\topmargin}{0in}
+\setlength{\textheight}{8.5in}
+
+% Use \article for articles and \asection for sections of articles.
+% Automatically provide labels with the same article or section title.
+\newcommand{\article}[1]{\section{#1} \label{#1}}
+\newcommand{\asection}[1]{\subsection{#1} \label{#1}}
+\newcommand{\asubsection}[1]{\subsubsection{#1} \label{#1}}
+\renewcommand{\thesection}{Article \Roman{section}}
+\renewcommand{\thesubsection}{Section \arabic{section}.\Alph{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{section}.\Alph{subsection}.\arabic{subsubsection}}
+
+% Headings
+\pagestyle{myheadings}
+\markright{{\rm CSH Constitution \hfill  As of \datechanged \hfill Page }}
+
+% Reference example:
+%Test reference \ref{House Objectives} House Objectives.
+
+
+\begin{document}
+% Title
+\maketitle
+
+% Articles
+\article{Name}
+The name of this Special Interest House shall be Computer Science House.
+
+
+\article{Derivation of Authority}
+The Computer Science House shall recognize that it receives its right to function as a Special Interest House from the Department of Residence Life in conjunction with the Residence Halls Association.
+
+
+\article{House Objectives}
+The objectives of Computer Science House are:
+	\begin{enumerate}
+	\item To enhance the education experience of its members.
+	\item To offer students educational programming with an emphasis in computers.
+	\item To provide a variety of services for its members, the RIT campus, and the Rochester Community.
+	\item To provide a friendly and comfortable living environment in the residence halls.
+\end{enumerate}
+
+
+\article{Constitutional Structure}
+\asection{House Charter}
+The House Charter is a document drafted by the department of Residence Life, setting down the guidelines within which this House operates and from which it derives its authority.
+
+\asection{Constitution}
+The House Constitution is written and maintained by the House and defines the major aspects, goals, and governing structure of the house.  It is reviewed annually by the Department of Residence Life.  The House Constitution is comprised of three sections:  articles, by-laws, and guidelines.  Any non-semantic change to an article or by-law should be presented to the House by the Evaluations Committee for discussion.  After the discussion an immediate House vote is taken.  A quorum of fifty percent of the number of all House members eligible to vote must be present in order for the vote to be official.  A vote exceeding fifty percent of all House members casting a vote is required for the non-semantic change to be placed into the constitution.  Non-semantic changes to the guidelines and semantic changes to articles, by-laws, or guidelines are described in detail below.
+
+\asubsection{Articles}
+Articles define the major aspects of the House. Any semantic change to an article requires the change to be proposed in writing for discussion at a House Meeting. Any modifications made due to the discussion are added to the written proposal and the modified proposal is posted in the House during the week. The final proposal is presented the following week and ballots are distributed for a secret ballot House vote as described in \ref{Voting}, Voting. The ballots are collected for a minimum of a forty-eight hour period. A quorum of two-thirds of the number of all House members eligible to vote must cast ballots for the vote to be official. A vote equaling or exceeding two-thirds of the number of votes cast is required for the change to be placed into the constitution. An article may be overridden by an immediate House vote as described in \ref{Voting}, Voting. There must be a quorum of eighty-five percent of the number of all House members eligible to vote for the vote to be official. A vote equaling or exceeding ninety percent of the number of votes cast is required for the override to take effect.
+
+\asubsection{By-Laws}
+By-Laws define the more flexible aspects of the House. A by-law may expand on rules outlined in an article, but they must never contradict an article. Any semantic change to a by-law requires the change to be proposed in writing for discussion at a House Meeting. Any modifications made due to the discussion are added to the written proposal and the modified proposal is re-read prior to voting. The vote may be taken immediately or tabled one week at the discretion of the Executive Board. When the final proposal is ready to be voted upon, an immediate House vote will be taken as described in \ref{Voting}, Voting. A quorum of two-thirds of the number of all House members eligible to vote must cast a vote for the vote to be official. A vote equaling or exceeding two-thirds of the number of votes cast is required for the change to be placed into the constitution. A by-law may be overridden by an immediate House vote as described in \ref{Voting}, Voting. There must be a quorum of two-thirds of the number of all House members eligible to vote for the vote to be official. A vote equaling or exceeding two-thirds of the number of votes cast is required for the override to take effect.
+
+\asubsection{Guidelines}
+Guidelines define the standard operating procedure of the Committees of the House. Guidelines must never contradict any rule defined in either the articles or by-laws. They are drafted during the Executive Board Training Process by the Director of the respective Committee. Directors and Committees are expected to adhere to them, but if necessary, may deviate from a stated guideline. The guidelines will include:
+\begin{itemize}
+\item An explicit definition of what it means to be a member of the respective committee
+\item Expectations of members in the committee
+\item Goals of the committee for the operating year
+\end{itemize}
+The House must be notified of any deviation from a stated guideline. Any semantic or non-semantic change to a guideline is presented in writing to the Committee the guideline pertains to. The change must pass a simple majority vote within the members of the committee for it to be accepted. It is then presented to the Executive Board for review prior to placing it in the Constitution. The House is notified of the change at the following House meeting.
+
+\asubsection{House Rules}
+The House Rules capsulate a House Member's responsibilities and expectations. Members are required to sign the document signifying their acceptance of the membership requirements and expectations. All Resident and Non-Resident are required to sign the House Rules annually. Because the House Rules are extracted from the Constitution, any modifications to the contents of the House Rules must first be made to the Constitution. \ref{Operations of the Executive Board}, \ref{The House Rules}, describes which information is extracted from the Constitution and placed into the House Rules.
+
+\article{Membership}
+There are six major types of membership available to Computer Science House.  Each carries different qualifications, expectations, and privileges.  When describing the different memberships available, the following terms are used:
+\begin{description}
+\item[Qualifications:] What qualifications an applicant needs to apply.
+\item[Selection:] The process by which an applicant gains membership.
+\item[Expectations:] What expectations the House has on its members.
+\item[Privileges:] What privileges the member can expect from the House.
+\item[Evaluations:] The process by which a member is reviewed and evaluated.
+\item[Resignations:] The process by which a member resigns membership.
+\item[Term:] The length of time the membership lasts.
+\end{description}
+\asection{Introductory Membership}
+\asubsection{Introductory Membership Qualifications}
+Introductory Membership is open to all RIT students.
+\asubsection{Introductory Membership Selection}
+Applicants notify the House of their interest in membership by submitting an application to the Evaluations Committee.  They must then undergo the selection process as defined in \ref{Operations of the Evaluations Committee}, \ref{Selection Process for Students Attending RIT for at Least One Quarter} and \ref{Selection Process for First Quarter and Entering RIT Students}.
+\asubsection{Introductory Membership Expectations}
+Introductory members are expected to be active participants in the House as defined in \ref{Operations of the Evaluations Committee}, \ref{Expectations of House Members}. If an Introductory member fails to  obtain 60\% (rounded up to the nearest whole person) of the Resident  Members signatures in the Introductory packet, discussed in \ref{Operations of the Evaluations Committee}, \ref{Expectations of House Members}, said member will not receive use of Computer Science House  facilities, as described in \ref{Introductory Membership Privileges}, until successful completion  of Introductory Evaluations.
+\asubsection{Introductory Membership Privileges}
+Introductory members receive the right to use Computer Science House facilities, to attend House functions, and to have housing priority over all persons who are not Computer Science House members.
+\asubsection{Introductory Membership Evaluations}
+Introductory members are evaluated on their performance during the introductory period.  The introductory process is described in \ref{Operations of the Evaluations Committee}, \ref{The Introductory Process}.
+\asubsection{Introductory Membership Resignations}
+An introductory member may resign by submitting the request for termination of membership to the House Chairman, or Evaluations Director in writing before the completion of the introductory process.
+\asubsection{Introductory Membership Term}
+The introductory membership shall last until the end of the introductory process, at which time they will either have their membership revoked or have their membership status changed to Resident member or Non-Resident member.
+
+\asection{Resident Membership}
+\asubsection{Resident Membership Qualifications}
+Resident Membership is open to all RIT students who comply with the Residence Life policies regarding residence in the Residence Halls.
+\asubsection{Resident Membership Selection}
+Applicants notify the House of their interest in Resident Membership by submitting an application to the Evaluations Committee and must then undergo the Selection Process as described in \ref{Operations of the Evaluations Committee}, \ref{Selection Process for Students Attending RIT for at Least One Quarter} and \ref{Selection Process for First Quarter and Entering RIT Students}.
+\asubsection{Resident Membership Expectations}
+Resident members are expected to live on the house and be active participants in the House as defined in \ref{Operations of the Evaluations Committee}, \ref{Expectations of House Members}.
+\asubsection{Resident Membership Privileges}
+Resident Members receive the right: to vote on all issues brought before the House, to have residency on the House, to hold an Executive Board office on the House, to use the Computer Science House facilities, to attend Computer Science House functions, to have priority for available housing on the House when returning from cooperative education as stated in \ref{Operations of the Evaluations Committee}, \ref{Housing Priority System}, to have guaranteed housing in compliance with the Residence Life policies regarding Special Interest Houses and the Housing Selection Process.
+\asubsection{Resident Membership Evaluations}
+Resident Members are evaluated semi-annually through the Evaluation Process as described in \ref{Operations of the Evaluations Committee}, \ref{Evaluations Process}.  Failure of the Evaluation Process could result in the member being asked to find alternative housing as soon as possible in accordance with all applicable Residence Life policies regarding room changes.
+\asubsection{Resident Membership Resignations}
+A Resident member may resign by submitting in writing the reason for resignation to the House Chairman, or Evaluations Director.  The resignation will take effect immediately and an announcement will be made at the following House Meeting.
+\asubsection{Resident Membership Term}
+Resident Membership shall last until the member: resigns, fails the Evaluation Process, or changes membership status.
+
+\asection{Non-Resident Membership}
+\asubsection{Non-Resident Membership Qualifications}
+Non-Resident membership is open to all RIT students.
+\asubsection{Non-Resident Membership Selection}
+Applicants notify the House of their interest in Non-Resident membership by submitting an application to the Evaluations Committee and must then undergo the Selection Process as described in \ref{Operations of the Evaluations Committee}, \ref{Selection Process for Students Attending RIT for at Least One Quarter} and \ref{Selection Process for First Quarter and Entering RIT Students}.  Any house Alumni may become a Non-Resident member by notifying the Evaluations Committee of their intent to participate, at which point they are reinstated as Non-Resident members of the house.
+\asubsection{Non-Resident Membership Expectations}
+Non-Resident members are expected to be active participants in the House as defined in \ref{Operations of the Evaluations Committee}, \ref{Expectations of House Members}.
+\asubsection{Non-Resident Membership Privileges}
+Non-Resident Members receive the right: to vote on all issues brought before the House, to use the Computer Science House facilities, to attend Computer Science House functions, to have priority for available housing on the House as stated in \ref{Operations of the Evaluations Committee}, \ref{Housing Priority System}.
+\asubsection{Non-Resident Membership Evaluations}
+Non-Resident Members are evaluated semi-annually through the Evaluation Process as described in \ref{Operations of the Evaluations Committee}, \ref{Evaluations Process}.
+\asubsection{Non-Resident Membership Resignations}
+A Non-Resident Member may resign by submitting in writing the reason for resignation to the House Chairman, or Evaluations Director.  The resignation will be read at the following House Meeting and become effective at that time.
+\asubsection{Non-Resident Membership Term}
+Non-Resident Membership shall last until the member: resigns, fails the Evaluation Process, or changes membership status according to \ref{Operations of the Evaluations Committee}, \ref{Evaluations Process}.
+
+\asection{Alumni Membership}
+\asubsection{Alumni Membership Qualifications}
+Alumni Membership is open to all prior members of Computer Science House who departed for reasons other than revocation of House Membership or failing the Objective Evaluation. 
+\asubsection{Alumni Membership Selection}
+Alumni Membership is the status of all prior members of Computer Science House who departed the house for any reasons other than failure of the Evaluations Process as described in \ref{Operations of the Evaluations Committee}, \ref{Evaluations Process}.
+\asubsection{Alumni Membership Expectations}
+There are no expectations associated with the Alumni Membership status, however those who are able are encouraged to adhere to \ref{Operations of the Evaluations Committee}, \ref{Expectations of House Members}.
+\asubsection{Alumni Membership Privileges}
+Alumni Members, at the discretion of the Executive Board, shall receive the right: to the use of Computer Science House facilities and to attend Computer Science House functions.
+\asubsection{Alumni Membership Evaluations}
+Alumni Members are not subject to the Evaluations Process.
+\asubsection{Alumni Membership Resignations}
+There are no resignations associated with Alumni Membership status.
+\asubsection{Alumni Membership Term}
+Alumni Membership shall last until the member changes their membership status as described in the Qualifications and Selections sections of either Resident or Non-Resident Membership.
+
+\asection{Honorary Membership}
+\asubsection{Honorary Membership Qualifications}
+Honorary Membership is open to a person whom the House feels has contributed great personal effort to the House and is deserving of House recognition.
+\asubsection{Honorary Membership Selection}
+Any House member may nominate a candidate for Honorary Membership by submitting the name in writing to the Evaluations Committee. The Evaluation Committee then begins the Honorary Membership Selection Process as defined in \ref{Operations of the Evaluations Committee}, \ref{Selection Process for Honorary Members}.
+\asubsection{Honorary Membership Expectations}
+Honorary Members are encouraged to remain in contact with the House.
+\asubsection{Honorary Membership Privileges}
+Honorary Members may advise in all issues brought before the House, use Computer Science House facilities, and attend Computer Science House functions.
+\asubsection{Honorary Membership Evaluations}
+Honorary Members are not subject to formal evaluations.
+\asubsection{Honorary Membership Resignations}
+An Honorary Member may resign by submitting in writing the reason for resignation to the House Chairman. The resignation will be read at the following House Meeting and become effective at that time.
+\asubsection{Honorary Membership Term}
+Honorary Membership shall last until the member resigns.
+
+\asection{Advisory Membership}
+\asubsection{Advisory Membership Qualifications}
+Advisory Membership is open to all members of the Rochester Institute of Technology professional, academic, or administrative staff.
+\asubsection{Advisory Membership Selection}
+Advisors are selected during the start of the academic year. Any House member may nominate a candidate for Advisory Membership by submitting the name in writing to the Executive Board. The candidates then participate in the Advisor Selection Process as defined in \ref{Operations of the Evaluations Committee}, \ref{Selection Process for Advisory Members}.
+\asubsection{Advisory Membership Expectations}
+Advisors are encouraged to offer advise and assistance to the House in any capacity the Advisor is able to help. Advisors are also encouraged to meet the House members and occasionally attend House activities.
+\asubsection{Advisory Membership Privileges}
+Advisory Members may advise in all issues brought before the House, use Computer Science House facilities, and attend Computer Science House functions.
+\asubsection{Advisory Membership Evaluations}
+Advisors are not subject to formal evaluations.
+\asubsection{Advisory Membership Resignations}
+An Advisor may resign by submitting in writing the reason for resignation to the House Chairman. The resignation will be read at the following House Meeting and become effective at that time.
+\asubsection{Advisory Membership Term}
+Advisory Membership shall last for one academic year or until the member resigns.
+
+
+\article{Executive Board}
+The Executive Board is the main governing body of the House.  Its purpose if to provide leadership and direction for the House, to oversee the day-to-day operations of the House, and to initiate and organize programs and projects for the House.
+\asection{Members of the Executive Board}
+\asubsection{Chairman}
+\asubsection{Voting Members}
+\begin{itemize}
+    \item Evaluations Director
+    \item Social Director(s)
+    \item Financial Director
+    \item Research and Development Director
+    \item House Improvements Director
+    \item Root Type Persons Representative
+    \item House History Director
+\end{itemize}
+\asubsection{Non-Voting Members}
+\begin{itemize}
+    \item House Secretary
+\end{itemize}
+
+\asection{Responsibilities}
+% For this section, we want items to use letters
+\renewcommand{\theenumi}{\alph{enumi}}
+\asubsection{Responsibilities of the Executive Board}
+\begin{enumerate}
+\item To fulfill the responsibilities pertaining to its purpose as stated in the description of the Executive Board in the header paragraph for \ref{Executive Board} (Executive Board).
+\item To meet at least weekly during the standard operating session, as defined in \ref{General Operations of the House}, \ref{Standard Operating Session}, to discuss and report the operations of the House.
+\item To report pertinent information to House members at the following House Meeting.
+\item To establish goals and expectations for the House for the upcoming year.
+\item To submit a yearly statement of goals and accomplishments of the present year to House members and to the Department of Residence Life.
+\item To act as a judicial board for any final ruling on the interpretation of the House Constitution, House document, or action taken by the House.
+\end{enumerate}
+
+\asubsection{Responsibilities of the Chairman}
+\begin{enumerate}
+\item To preside over Executive Board and House Meetings.
+\item To exercise general supervision over the operations of the Executive Board.
+\item To exercise general supervision over regular House activities.
+\item To act as a liaison to the academic and administrative departments at RIT.
+\item To act in collaboration with the Evaluations Director and an additional Executive Board member who is chosen by a simple majority vote among the members of the Executive board as a judicial board for any initial ruling on the interpretation of the House Constitution, House document, or action taken by the House. 
+\item To cast tie-breaking vote in a split decision in an Executive Board vote.
+\end{enumerate}
+
+\asubsection{Responsibilities of the Evaluations Director}
+\begin{enumerate}
+\item To preside over Evaluations Committee Meetings
+\item To exercise general supervision over the operations of the Evaluations Committee.
+\item To oversee the selection of new House members.
+\item To oversee the evaluations of current House members.
+\item To collaborate with the Residence Life Advisor to determine room change selection and any changes of membership status to Resident Membership.
+\item To act in collaboration with the Chairman and an additional Executive Board member who is chosen by a simple majority vote among the members of the Executive board as a judicial board for any initial ruling on the interpretation of the House Constitution, House document, or action taken by the House. 
+\item To prepare the House for Open Houses, tours, and special events.
+\end{enumerate}
+
+\asubsection{Responsibilities of the Social Director}
+\begin{enumerate}
+\item To preside over Social Committee Meetings
+\item To exercise general supervision over the operations of the Social Committee.
+\item To oversee the organization, initiation, and execution of House activities and events.
+\end{enumerate}
+\asubsection{Responsibilities of the Financial Director}
+\begin{enumerate}
+\item To oversee the Financial Committee.
+\item To supervise financial administrators and transactions involving house projects.
+\item To maintain financial and inventory records of House capital and assets.
+\item To plan and enforce a House budget.
+\item To supervise House expenditures and financial transactions.
+\item To publish a quarterly House financial statement.
+\item To supervise the collection of quarterly House dues.
+\item To oversee the planning and execution of fundraising events.
+\end{enumerate}
+
+\asubsection{Responsibilities of the Research and Development Director}
+\begin{enumerate}
+\item To preside over Research and Development Committee Meetings
+\item To exercise general supervision over the operations of the Research and Development Committee.
+\item To oversee the organization and construction of technical projects for the House's benefit.
+\item To collaborate with the Operational Communications Committee in an attempt to fulfill the House's need for technical equipment.
+\item To provide seminars and tutorials to educate House members in technical areas.
+\end{enumerate}
+
+\asubsection{Responsibilities of the House Improvements Director}
+\begin{enumerate}
+\item To preside over House Improvements Committee Meetings.
+\item To exercise general supervision over the operations of the House Improvements Committee.
+\item To oversee the organization and construction of physical improvements to the House.
+\item To oversee the general maintenance of the appearance of the House.
+\end{enumerate}
+
+\asubsection{Responsibilities of the Root Type Persons Representative}
+\begin{enumerate}
+\item To represent the Root Type Persons at Executive Board Meetings and at House Meetings.
+\item To report the status of the House computer systems and network to the Executive Board and House members.
+\item To oversee the implementation of maintenance and upgrades to the House Computer Systems and Network.
+\end{enumerate}
+
+\asubsection{Responsibilities of the Root Type Persons}
+\begin{enumerate}
+\item The Root Type Persons are responsible for improvement, maintenance, and management of the House's computer systems and networking equipment.
+\item There must always be at least two Root Type Persons at all times.
+\end{enumerate}
+
+\asubsection{Responsibilities of the House History Director}
+\begin{enumerate}
+\item To preside over House History Committee Meetings
+\item To exercise general supervision over the operations of the House History Committee.
+\item To oversee the upkeep of House Members records.
+\item To oversee the celebration of all House Member's birthdays.
+\item To oversee the production of a quarterly newsletter highlighting Computer Science House happenings and a yearly Alumni Directory.
+\item To maintain, uphold, and promote house traditions.
+\item To collaborate with the Social Director(s) to ensure that all the Non-Resident, Alumni, and Advisory Members are informed of upcoming events.
+\end{enumerate}
+
+\asubsection{Responsibilities of the House Secretary}
+\begin{enumerate}
+\item To ensure that minutes are recorded and posted for Executive Board Meetings.
+\item To ensure that minutes are recorded and posted for House Meetings.
+\item To oversee the maintenance of Executive Board records and documents.
+\item To provide administrative assistance to the Executive Board.
+\item To oversee the maintenance of the Activities Information Centers.
+\item To record all votes cast during House Meetings and Open Executive Board Meetings.
+\end{enumerate}
+
+\asection{Qualifications}
+\asubsection{Qualifications to be the Chairman, Evaluations Director, Social Director(s), Financial Director, Research and Development Director, House Improvements Director, House History Director}
+\begin{enumerate}
+\item Candidates must be Resident Members or Non-Resident Members during the term of office.
+\item Candidates must have at least two prior quarters House membership as either Resident or Non-Resident Membership.
+\item Elected or selected candidates may not hold two simultaneous Executive Board positions, and must therefore resign their current position or decline a second position should they be elected or selected to a second position.
+\end{enumerate}
+\asubsection{Qualifications to be the Root Type Persons Representative}
+\begin{enumerate}
+\item Candidates must be a current Root Type Person.
+\item Candidates must be a currently Resident or Non-Resident House Member.
+\item A Root Type Person cannot be the representative if they currently hold any other Executive Board Position.
+\end{enumerate}
+\asubsection{Qualifications to be a Root Type Person}
+\begin{enumerate}
+\item Candidates must be a Resident Member in good standing, or be a Non-Resident Member and have been a Resident member within the last twelve months.
+\item Candidates may be granted an exemption by current Root Type Persons.  Such an exemption may be withdrawn at any time by the current Root Type Persons.
+\item Prior Root Type Persons are those members who are no longer current Resident or Non-Resident House members and have not been granted an extension by the current Root Type Persons.  Prior Root Type Persons are not guaranteed access to the current root passwords and other authentication tokens.
+\item The current Root Type Persons may from time to time draft rules and regulations specifying the rights and privileges of Prior Root Type Persons.
+\end{enumerate}
+
+\asubsection{Qualifications to be the House Secretary}
+\begin{enumerate}
+\item Candidates must be Resident Members on the House during the term of office.
+\item Elected or selected candidates may not hold two simultaneous Executive Board positions, and must therefore resign their current position or decline a second position should they be elected or selected to a second position.
+\end{enumerate}
+
+\asection{Selection}
+\asubsection{Dual Directorship}
+Social Director is the only Executive Board position that allows for Dual Directorship. If two candidates elect to run as a Dual Directorship, their names are placed together on a single line of the election ballot. If they are also nominated as a normal directorship or as a dual directorship with another House member, their votes are not cumulative. Each different nomination must be a separate entry on the election ballot.
+\\The following special cases cover the operation of a dual directorship:
+\begin{itemize}
+\item If one of the members in a dual directorship resigns the directorship, or for any other reason ends the term of office, the other member in the dual directorship must also step down and the office becomes vacated. The vacated office is then handled like any other vacated office; see \ref{Executive Board}, \ref{Resignations}.
+\item During an official Executive Board Vote, each dual directorship member's vote counts for one-half vote in the tallying of votes. The members of the dual directorship need not vote the same way in a vote.
+\item A member of a dual directorship may not hold any other Executive Board position.
+\item When attendance requirements call for the Social Directors to be present, both dual directorship members are to fulfill the requirements.
+\end{itemize}
+\asubsection{Selection of the Chairman, Evaluations Director, Social Director(s), Financial Director, House Improvements Director, House History Director}
+\begin{enumerate}
+\item The opening of the Executive Board position is announced at a House meeting and nominations for the position are taken for a minimum of a seventy-two hour period.  Any House member may nominate any House member or members for a Dual Directorship if it is permitted for the respective office.
+\item The candidates meeting the qualifications of the office they were nominated for, will be notified of their nomination.  Each candidate is given a minimum of twenty-four hour period to accept or decline the nomination.  A list of all nominees who have accepted their nominations will be posted shortly thereafter.
+\item Each candidate will be given an equal amount of time before the House to present their platform of candidacy.
+\item Ballots will then be distributed and voting will be open for a minimum of a forty-eight hour period.  The Ballots will list, in random order, all of the candidates for a given office with a means to indicate the selection of one of the candidates.  In addition, an area will be provided to indicate a write-in selection of a candidate.
+\item At the end of the voting period, the Chairman will terminate voting by collecting the ballot box and the votes shall be counted as stated in \ref{Voting}, Voting.
+\item The winners are determined by a simple majority vote of the ballots cast as defined in \ref{Voting}, Voting.  A quorum of fifty-percent of the number of all members eligible to vote is required for the elections to be official.  All winners are notified and asked to accept or decline their election.  Any office whose winner declines the election, or whose winner was a write-in candidate who does not fulfill the requirements of the elected office, shall remain vacant and a new election process shall begin for that office.
+\end{enumerate}
+\asubsection{Selection of the Research and Development Director, House Secretary}
+\begin{enumerate}
+\item The opening of the Executive Board position is announced at a House Meeting and nominations for the position are taken for a minimum of a seventy-two hour period.  A House member may nominate any House member.
+\item The candidates meeting the qualifications of the office that were nominated for, will be notified of their nomination.  Each candidate is given a minimum of twenty-four hour period to accept or decline the nomination.  A list of all nominees who have accepted their nominations will be posted shortly thereafter.
+\item Each candidate will be given an equal amount of time before the Executive Board to present their platforms of candidacy.  This Executive Board Meeting is closed to the Executive Board Members and House members with explicit invitation from the Executive Board.
+\item All current Executive Board Voting Members must be present during the discussion and voting period unless that member is a candidate for the office in discussion, in which case the member is absent and their vote is abstained.  After each candidate for an office has been presented and discussed, a simple majority Executive Board vote, as described in \ref{Voting}, Voting, is taken to determine the selection of candidates.
+\item All winners are notified and asked to accept or decline their selection.  Any office whose winner declines the selection shall remain vacant and a new selection process shall begin for that office.
+\end{enumerate}
+\asubsection{Selection of the Root Type Persons Representative}
+\begin{enumerate}
+\item Root Type Persons Representative shall be chose by the current Root Type Persons.  The representative may change on a daily basis.
+\end{enumerate}
+\asubsection{Selection of Root Type Persons}
+\begin{enumerate}
+\item Nominations are taken from the Root Type Persons and Prior Root Type Persons meeting the selection criteria in \ref{Executive Board}, \ref{Qualifications to be a Root Type Person}.
+\item Each candidate is given a minimum of twenty-four hour period to accept or decline the nomination.  
+\item A list of all nominees who have accepted is presented to the Executive Board for approval.  This Executive Board Meeting is closed to the Executive Board Members, Root Type Persons, and House members with explicit invitation from the Executive Board.
+\item All current Executive Board Voting Members must be present during the discussion and voting period unless that member is a candidate for the office in discussion, in which case the member is absent and their vote is abstained.  A simple majority Executive Board vote, as described in \ref{Voting}, is taken to determine whether the nominations of the Root Type Persons are accepted.
+\end{enumerate}
+
+\asection{Evaluations}
+\begin{enumerate}
+\item All members of the Executive Board are subject to the Evaluation Process as stated in \ref{Operations of the Evaluations Committee}, \ref{Evaluations Process}.
+\end{enumerate}
+
+\asection{Resignations}
+An Executive Board Member may resign by submitting in writing the reason for resignation to the House Chairman. The resignation will be read at the following House Meeting and become e?ective at that time. The o?ce will become vacant and the selection process for a new member will begin at that time. The duties and responsibilities of a vacated o?ce are assumed by the Chairman or by a member of the Executive Board that is appointed at the Chairman’s discretion until the new member takes o?ce. The vote of a vacated Executive Board position shall be cast as an abstention in all Executive Board matters where this vote is required to be cast. 
+\asection{Impeachment}
+\begin{enumerate}
+\item Impeachment of any Executive Board Member may be initiated by petition, in writing, consisting of a minimum number of signatures of current House members equaling or exceeding one-third the Number of Possible Votes as defined in \ref{Voting}, \ref{Total Number of Possible Votes}.
+\item The impeachment petition is then presented at an Executive Board Meeting.  The member(s) initiating the petition present their case to the Executive Board.  The Executive Board then questions the accused member of the allegations.
+\item The Executive Board votes on the impeachment petition, with all voting members present except the accused member who must be absent and whose vote counts as an abstention, to determine if the allegations stated in the petition are legitimate grounds for impeachment. If the majority of Executive Board votes are negative, the petition and impeachment proceedings are dismissed. This vote may be overridden by an impeachment petition consisting of the grounds for impeachment and a minimum of number of signatures of current House members equaling or exceeding two-thirds the number of all House members currently eligible to vote.
+\item If the majority of the Executive Board votes are positive, or the negative vote was overridden, the petition is presented at the following House Meeting and the accused and accuser(s) again present their cases.
+\item Ballots will then be distributed and a secret ballot House vote shall be held for a minimum of a forty-eight hour period to determine whether or not the member should be removed from office. Votes shall be collected and counted as described in \ref{Voting}, \ref{Secret Ballot}.
+\item A quorum of two-thirds of the Number of Possible Votes is necessary for the vote to be official. A vote equaling or exceeding two-thirds the number of all ballots cast is necessary for the accused officer to be removed from office. If a quorum cannot be reached after two attempts, or the percentage of affirmative votes does not equal or exceed the minimum, impeachment proceedings are dismissed.
+\item If the percentage of a?rmative votes equals or exceeds the minimum the impeached o?cer is relinquished of their position and any beneﬁts thereof and this position is treated like any other vacated position. A new selection and interim duty fulﬁllment procedure is followed similar to that of a resignation; see Article VI, Section 6.F.
+\end{enumerate}
+
+\asection{Term}
+\begin{enumerate}
+\item The Election Process for the following year's Executive Board members shall begin no later than the third week of the Spring Quarter.
+\item The newly selected officers shall begin their terms on June 1 of that year and their terms shall end on May 30 of the following year.
+\item The term of an officer will be abbreviated due to resignation, impeachment, failure of the evaluation process, or change in membership status.
+\item Officers elected or selected during the course of the year due to an abbreviated term of the previous officer shall hold office until the end of the normal term.
+\end{enumerate}
+
+\article{House Committees}
+House Committees are the major work force of the House. There are two major types of committees: permanent and ad-hoc. There is one permanent committee for each major aspect of the government of the House, and each permanent committee is chaired by an Executive Board member. The ad-hoc committees are created on an as-needed basis. They are generally very task oriented and are chaired by a House member. A committee has some jurisdiction in its area of interest and often is responsible for the day-to-day decisions regarding its area of interest. Any large expenditures or large effect decisions must be brought before the entire House.
+\asection{Evaluations Committee}
+\begin{enumerate}
+\item The Evaluations Committee is responsible for the screening, interviewing, and acceptance or rejection of prospective members to the House.  The committee is also responsible for Semi-Annual Evaluations of current House members.
+\item Membership in the Evaluations Committee is open to any member of the house.  Evaluations Committee meetings are open to any member of the House.
+\item Semi-Annual Evaluations Meetings are open only to all current Resident and Non-Resident Members.  These members must have attended the Criteria Definition Meeting held prior to the actual Semi-Annual Evaluations.  All committee directors are expected to attend the Semi-Annual Evaluations Meetings to assist in the evaluations of House members.
+\end{enumerate}
+\asection{Social Committee}
+\begin{enumerate}
+\item The Social Committee is responsible for organizing and planning many of the House activities and social events.  The committee is expected to ensure that there is a variety of activities for House members to participate in throughout the academic year.
+\item Membership in the Social Committee is open to any member of the House.  House members with ideas for social events are encourages to approach the Social Director(s), discuss their ideas, and present them at a committee meeting.
+\end{enumerate}
+\asection{Research and Development Committee}
+\begin{enumerate}
+\item The Research and Development Committee is responsible for researching and planning House’s technical projects and activities. It is the responsibility of the committee to promote technical projects and seminars on ﬂoor and help develop the learning aspect of Computer Science House. 
+\item  Membership in the Research and Development Committee is open to any member of the House. House members are encourage to work on technical projects or bring ideas for projects to the Research and Development Director for discussion and to present them at the committee meeting. 
+\end{enumerate}
+\asection{House Improvements Committee}
+\begin{enumerate}
+\item The House Improvements Committee is responsible for the maintenance and upkeep of the House facilities, along with physical improvements to the living environment.
+\item Membership in the House Improvements Committee is open to any member of the House.  Members are encouraged to participate in some of the House Improvement projects.
+\end{enumerate}
+\asection{House History Committee}
+\begin{enumerate}
+\item The House History Committee is responsible for the maintenance and upkeep of House records of members and the production and distribution of a quarterly newsletter and a yearly Alumni Directory.
+\item The House History Committee is also responsible for the promotion of all Computer Science House traditions and leading the celebration of Computer Science House member's birthdays.  The House History Committee will also present a yearbook outlining House events for the year to the House.
+\item Membership in the House History Committee is open to any member of the House.  House members are encouraged to participate in Committee activities.
+\end{enumerate}
+\asection{Operational Communications Committee}
+\begin{enumerate}
+\item The Operational Communications Committee is responsible for the improvement, maintenance, and management of the House's computer systems and networking equipment.
+\item Membership in the Operational Communications Committee is defined as any member who has been selected as a Root Type Person as defined in \ref{Executive Board}, \ref{Qualifications to be a Root Type Person}.
+\item The Operational Communications Committee is a self-governing committee making decisions by a simply majority vote.
+\end{enumerate}
+\asection{Financial Committee}
+\begin{enumerate}
+\item The Financial Committee is responsible for the generation of House funds.
+\item Membership in the Financial Committee is open to any member of the House.  House members with ideas for fund-raising activities are encouraged to approach the Financial Director, discuss their ideas, and present them at a committee meeting.
+\item Included in the Financial Committee are those administrators responsible for overseeing those House privileges which require monetary commitment, for example: Drink Administrators.
+\end{enumerate}
+\asection{Ad-Hoc Committees}
+\begin{enumerate}
+\item Ad-Hoc Committees are responsible for the task for which they were created.  When the task is completed, the committee dissolves.  When the Executive Board or a group of House members feels an Ad-hoc Committee is necessary, they present their plans to the Executive Board and the Executive Board decides whether committee status is granted.
+\item When the Ad-Hoc Committee is granted status, a director is appointed, and duties, budgetary, and membership considerations are defined.
+\item Any responsibilities for budgets or finances for the Ad-Hoc Committee are placed upon the assigned director.
+\item When an Ad-Hoc Committee Director resigns his duties, the committee dissolves and committee status must be reinstated with a new director.
+\end{enumerate}
+
+
+\article{Voting}
+There are two major ways to describe a vote: type of balloting and number of ballots required. A vote may be any combination of one type of balloting and one number of ballots required. There are also a number of definitions that need to be defined before the procedures can be defined.
+\asection{Definitions}
+\asubsection{Total Number of Possible Votes}
+The Total Number of Possible Votes is defined as the number of possible ballots that can be cast in a vote. In a House vote, it is the sum of the number of all Resident and Non-Resident members. In a formal Executive Board vote, it is defined as the number of all voting Executive Board members. In a committee vote, it is defined as the number of members present at the current committee meeting.
+\asubsection{Quorum}
+A Quorum is defined as the minimum number of votes cast required for a vote to be official. It is usually defined as a fraction or a percentage of the total number of possible votes. A Quorum is reached if the number of votes cast, counting abstentions, is equal to or exceeding the minimum number of votes.
+\asubsection{Absent Ballot}
+An Absent Ballot is defined as any ballot that was not entered into the vote because a member eligible to vote did not vote or provide a means to indicate his or her vote. Absent Ballots are not counted towards a Quorum, but they are counted toward the total number of possible votes cast.
+\asubsection{Proxy Ballot}
+A Proxy Ballot is defined as any ballot that was cast by one member on behalf of another member. Any member may cast Proxy Ballots for another member who is unable to actually participate in the vote and only by written permission for the specific vote. Proxy votes are only permissible where explicitly stated.
+\asubsection{Abstention}
+An Abstention is defined as a vote indicating a neutral position in the vote. A means to abstain must always be provided in a vote. Abstentions are counted towards a quorum, but not towards the Total Number of Votes Cast used to determine if a vote passes or not.
+\asubsection{Total Number of Votes Cast}
+The Total Number of Votes Cast is defined as the total number of votes received for every voting option minus the number of abstentions.
+
+\asection{Type of Balloting}
+\asubsection{Secret Ballot}
+When a Secret Ballot is called for, the person chairing the vote will see that ballots are made with a means to indicate every possible choice in the vote. They are then distributed to each House member eligible to cast a ballot in the vote, and collected in the indicated ballot box for a pre-specified period of time, the length time depending on the nature of the vote. This time period must be a minimum of forty-eight hours in length for any constitutional modification vote, candidate selection vote, or officer removal vote, and twenty-four hours in length for any other vote. The minimum length of the time period may be explicitly lengthened, but never shortened, in the text describing the actual vote. At the end of the voting period, the person chairing the vote collects the ballot box thus closing the voting. The votes are to be counted by person chairing the vote, and two House Members randomly selected, none of whom are directly involved in the vote. Being directly involved is defined as being a candidate in an election, or the accused or accuser in an impeachment. If every Executive Board member is directly involved in the vote, then a third House member is selected at random to count votes in place of the person chairing the vote. Any additional requirements to the voting procedure are described in the section pertaining to the actual vote.
+\asubsection{Immediate Vote}
+When an Immediate Vote is called for, the person chairing the vote will state all of the possible ways to vote and then call out each possibility one at a time. The chairing member will count the number of members casting their immediate vote for that possibility. When all of the possibilities have been voted upon, the totals will be tallied. Any additional requirements to the voting procedure are also described in the section pertaining to the actual vote.
+\asection{Number of Ballots Required}
+The Number of Ballots Required refers to the numbers required to achieve a quorum and for a vote to pass.  Below are listed three standard votes.  Numbers for non-standard votes are defined in the section describing the actual vote.
+\asubsection{Simple Majority Vote}
+In a Simple Majority Vote a Quorum is reached if the Total Number of Votes Cast is equal to or exceeds one-half the Total Number of Possible Votes. A selection in the vote passes if the number of votes cast for that selection is larger than the number of votes cast for every other selection individually.
+\asubsection{Fifty Percent Vote}
+In a Fifty Percent Vote a Quorum is reached if the Total Number of Votes Cast is equal to or exceeds fifty percent of the Total Number of Possible Votes. A selection in the vote passes if the number of votes cast for that selection exceeds fifty percent of the Total Number of Votes Cast.
+\asubsection{Two-thirds Vote}
+In a Two-thirds Vote a Quorum is reached if the Total Number of Votes Cast is equal to or exceeds two-thirds the Total Number of Possible Votes. A selection in the vote passes if the number of votes cast for the selection equals or exceeds two-thirds of the Total Number of Votes Cast.
+\asubsection{Three Tiered Vote}
+When voting on a set of three choices where each choice can be ranked in a definite order, a selection for either the lowest of highest option will only pass is the votes cast for that selection exceeds fifty percent of the Total Number of Votes Cast.  If neither the highest or lowest selection reaches fifty percent, the middle option will then be passed.  In a Three-Tiered Vote, a Quorum is reached if the Total Number of Votes Cast is equal to or exceeds two-thirds of the Total Number of Possible Votes. 
+\asection{Ties Between Vote Selections}
+The action to take on a tie depends on whether or not the vote was a pass/fail vote or a multiple choice vote. In a pass/fail vote, if the number of votes cast for the pass selection equals the number of votes cast for the fail selection, then the vote failed. In a multiple choice vote, if multiple selections may pass, then a tie does not present a problem, however, if only one selection may pass, then the vote must either be recast or tabled according to the discretion of the person chairing the vote. In the event of a tie in an Executive Board vote, the Chairman may cast the tie-breaking vote. 
+\end{document}

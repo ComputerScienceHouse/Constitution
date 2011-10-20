@@ -1,0 +1,249 @@
+% BEFORE CHANGES ARE MADE TO THIS DOCUMENT:
+% -References will be automatically updated if any part is added, deleted, etc. 
+%  However, if a sub part is moved to a different part, its references must be 
+%  changed.
+% -This document must be ratified by the House (as per the Constitution), 
+%  then printed, signed, notarized, and placed in the House filing cabinet
+%  if changes are to be officialized.
+
+\documentclass{article}
+% The xr package allows external references
+\usepackage{xr}
+
+% This package is useful for debugging label problems
+% Comment out in final revision
+%\usepackage{showkeys}
+
+% Define the external document to be constitution for cross referencing purposes
+\externaldocument{constitution}
+
+% Title page information
+\title{Computer Science House By-Laws}
+\author{Computer Science House Executive Board}
+% Last Modified Date
+\newcommand{\datechanged}{Monday, April 5, 2004}
+\date{\datechanged}
+
+% Fix margins
+\setlength{\evensidemargin}{0in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\textwidth}{6.5in}
+\setlength{\topmargin}{0in}
+\setlength{\textheight}{8.5in}
+
+% Use \article for articles and \asection for sections of articles.
+% Automatically provide labels with the same article or section title.
+\newcommand{\bylaw}[1]{\section{#1} \label{#1}}
+\newcommand{\bsection}[1]{\subsection{#1} \label{#1}}
+\newcommand{\bsubsection}[1]{\subsubsection{#1} \label{#1}}
+\renewcommand{\thesection}{By-Law \Roman{section}}
+\renewcommand{\thesubsection}{Section \arabic{section}.\Alph{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{section}.\Alph{subsection}.\arabic{subsubsection}}
+
+% Headings
+\pagestyle{myheadings}
+\markright{{\rm CSH Constitution \hfill  As of \datechanged \hfill Page }}
+% Reference example:
+%Test reference \ref{House Objectives} House Objectives.
+
+
+\begin{document}
+% Title
+\maketitle
+
+% By-Laws
+\bylaw{By-Law Structure}
+By-Laws define the more flexible aspects of the House. Any semantic change to a by-law requires the change to be proposed at a House Meeting, discussed, followed by a House vote as described in \ref{Voting}, Voting. A by-law may be overridden by an immediate House vote with a quorum of sixty-six percent of the number of all House members privileged to vote. A vote equaling or exceeding sixty-six percent of all House members present during the vote is required for the override to go through. The By-Laws are arranged by section with each section of By-Laws pertain to a particular governing aspect of the House 
+
+
+\bylaw{General Operations of the House}
+\bsection{Standard Operating Session}
+The Standard Operating Session for Computer Science House is during the ten weeks of Fall, Winter, and Spring Academic Quarters.  The Summer Academic Quarter, all between Quarter Interim, and all end of Quarter Exam Weeks are considered Non-Standard Operating Session.  Unless explicitly stated otherwise, the requirements and expectations defined in the constitution are for the Standard Operating Session.
+
+
+\bylaw{Operations of the Executive Board}
+\bsection{Weekly Notes}
+The Executive Board members are expected to submit to the House, notes for their meetings each week.
+\bsection{The House Rules}
+The House Rules shall contain the following information:
+\begin{itemize}
+\item The Section of \ref{Membership} Membership that corresponds to the membership status of the signing member.
+\item The explanatory paragraph from \ref{Operations of the Evaluations Committee}, \ref{Evaluations Process} describing the Evaluation Process
+\item The Computer Science House Code of Conduct Sheets pertaining to responsible utilization of the Computer Science House and Rochester Institute of Technology facilities.
+\end{itemize}
+\bsection{Closed Executive Board}
+\newcommand{\writeoutref}{\ref{Executive Board}, \ref{Voting Members},}
+\bsubsection{Closed Executive Board Meetings are open only two the Chairman and Voting Members of the Executive Board as deﬁned in Article 6, Section A, Subsection 3, and those with express permission of the Executive Board. }
+
+\bsubsection{A closed Executive Board meeting may be called at any time by any member of the Executive Board.  However, the Chairman and at least two-thirds of the Voting Members as defined in Article 6, Section A, Subsection 3 must be present for a meeting to be called.}
+
+\bylaw{Operations of the Financial Committee}
+\bsection{Amount of House Dues}
+The amount of dues for Resident Members is thirty dollars (\$35.00) per Academic Quarter.  The amount of dues for Non-Resident Members is twenty-five dollars (\$30.00) per Academic Quarter.
+\bsection{Collection of House Dues}
+The Financial Director is responsible for ensuring the House is notified of the due date for the payment of House dues at least two weeks in advance of the actual due date. If a member is unable to pay House dues by the due date, he or she should contact the Financial Director prior to the due date or his or her payment will be considered delinquent.
+\\* \\*
+If the Financial Director determines that the member's reason for inability to pay House dues is sufficient, an extended due date will be set for that member. If the Financial Director determines the reason to be insufficient, the member may appeal the Executive Board. If the Executive Board upholds the Financial Director's ruling, then the member's payment is considered delinquent. If the Executive Board overrides the Financial Director's ruling, the Executive Board will set an extended due date for that member.
+\\* \\*
+If the member again finds himself or herself unable to pay dues at the time of the extended due date, he or she may follow the same procedure for the first extension.
+\\* \\*
+If a member's payment goes delinquent for any of the above reasons, his or her case is brought before the Executive Board, and action may be taken at the discretion of the Executive Board. The Financial Director should be present at this hearing. If the initial House judicial board feels it is unable to adequately resolve the case, or the member wishes to appeal any ruling by the initial House judicial board, the case may be presented to the Executive Board as the final House judicial board.
+\\* \\*
+The Executive Board has the authority to enforce House sanctions up to and including revocation of House privileges and/or the removal of membership status. Once the dues have been paid, the judicial board has the option of dropping all current sanctions or continuing the current sanctions until they have been completed. The Executive Board may not continue to render new sanctions once the dues have been paid.
+\bsection{Breakdown of Dues for Committee Budgets}
+\begin{center}
+\begin{tabular}[c]{l c}
+Committee or Budget Name & Percentage of Dues \\
+\hline
+\hline
+Operational Communications &	19\% \\
+\hline
+Evaluations \& Selections & 4\% \\
+\hline
+House History & 9\% \\
+\hline
+House Improvements & 9\% \\
+\hline
+Research and Development & 19\% \\
+\hline
+Miscellaneous & 5\% \\
+\hline
+House Accum. & 10\% \\
+\hline
+Social & 25\% \\
+\hline
+\end{tabular}
+\end{center}
+\bsection{Expenditure Approval}
+All House expenditures must be approved by the financial director and the director responsible for the budget from which the funds will be drawn. If any single expenditure exceeds fifty dollars (\$50.00) in amount, it must be approved by a simple majority House vote at a House meeting before the funds may be appropriated. If any total expenditure exceeds seventy-five dollars (\$75.00) in amount, it must be approved by a simple majority House vote at a House meeting before the funds may be appropriated. A total expenditure is defined as all the funds drawn for a specific event, project, piece of equipment, or service.
+\\* \\*
+Any project requiring more than \$300 in total funding from CSH must include a Complete Project proposal, including a Project Budget, Timeline and Resources needed. The person requesting the funds must then report to executive board once per week on the progress of the project.
+
+
+\bylaw{Operations of the Evaluations Committee}
+\bsection{The Introductory Process}
+The Introductory Process is designed to provide an easy means for an applicant or new member to meet existing House members, learn House history, demonstrate their involvement potential in the House, and allow existing House members to meet and evaluate the applicant or new member.
+\\* \\*
+The Evaluations Committee chooses between 1 and 3 House members to be Introductory Process Advisors. The advisors organize the participants at the beginning of the Introductory Project and thereafter act as a resource to keep the Project running smoothly.  All participants will receive an Intro. Packet minimally containing the following information:
+\begin{itemize}
+\item A description of the History of Computer Science House
+\item A list of all Resident members, as defined in Article V, Membership.
+\item The Computer Science House Constitution and By-Laws.
+\item The Computer Science House Dictionary
+\end{itemize}
+The Introductory Process lasts for a minimum of six weeks from the initiation of the process, until the participant has completed all of the following requirements. The Executive Board may hold a closed ballot Simple Majority vote to extend the Introductory Process based on requirements listed in the Introductory Process Proposal. However, the Introductory Project must be complete before the Introductory Evaluation occurs.
+\\* \\*
+The participant is given 2 weeks complete the following lists, termed the Intro. Sheets:
+\begin{itemize}
+\item For each Resident member, Executive Board member, and for Fifteen Non-Resident and Alumni members (in addition to Non-Resident Executive Board Members), list:
+\begin{itemize}
+\item The member's home town
+\item The members local room and phone, or address as applicable
+\item The member's major and year
+\item The House committee(s) the member is interested in
+\item A question of your own to get to know the member
+\item The member's signature.
+\end{itemize}
+\item For each House committee, list:
+\begin{itemize}
+\item The full name of the committee
+\item Some of the responsibilities of the committee
+\item The name of the committee's director
+\item The weekly meeting time and place
+\end{itemize}
+\item Seven annual Computer Science House social events
+\item Seven major Computer Science House technical achievements
+\end{itemize}
+The participant is also expected to be involved in the following:
+\begin{itemize}
+\item  Attend all House meetings during the process
+\item  Attend at least one House committee meeting each week of the process
+\item  Attend at least one House social event during the process
+\item  Show an acceptable amount of participation in at least one Technical Project.  Acceptable participation is determined by the project leader and the Introductory Evaluation Process described in By-Law V, Section F, Subsection 5.  This project is in addition to the Technical Project required for all Resident and Non-Resident members as stated in By-Law V, Section G.
+\end{itemize}
+The participant is also expected to be involved in the Introductory Project. The Introductory Project is an annual fundraiser that takes place during the Fall Quarter Introductory Process. It is organized and carried out by all Introductory Process participants. All of the proceeds go to a charity chosen in advance by the participants. The participants must elect a non-voting Executive Board Representative, termed the Freshman President who is required to represent the Introductory Process participants on the Executive Board. The Freshman President is responsible for any internal Introductory Project duties as well as for bringing a written Introductory Project Proposal to the Executive Board. The Executive board will hold discussion followed by a closed ballot Simple Majority Vote according to \ref{Voting} Voting, \ref{Simple Majority Vote} Simple Majority Vote, to determine if the proposed project fulfills the Introductory Project requirements.
+\\* \\*
+At the end of the Introductory Period, there will be an Introductory Evaluation, described in By-Law V, Section F, Subsection 5, to determine which members will be extended offers of full membership.
+
+\bsection{Selection Process for Students Attending RIT for at Least One Quarter}
+\bsubsection{The applicant submits an application to the Evaluations Committee for review.}
+\bsubsection{The applicant participates in an informal interview with exactly three current Resident, Non-Resident, Alumni, or Honorary Members.}
+\bsubsection{The Evaluations Committee then meets and reviews all of the application materials and decides whether to accept the person as a special introductory member.}
+\bsubsection{The applicant is interviewed again, no less than 10 weeks after acceptance to the introductory process, by three different persons meeting the same requirements as for the first interview. The purpose of this interview is to determine if the applicant has shown sufficient interest and work to merit becoming a full Resident or Non-Resident Member.}
+\bsubsection{The Evaluations Committee reviews all information regarding the applicant and if the applicant is found to be a positive influence on House objectives or morale; accepts the applicant to either full Resident or Non-Resident membership, rejects the applicant, or extends the introductory process for the applicant until the next fall quarter, during which time the applicant must participate in the introductory process used by introductory members during fall quarter.}
+Note: Most membership privileges do not initiate until successful completion of the introductory process. This means that until the member has passed the introductory evaluation, the member does NOT have the right to vote on House issues and does NOT count towards quorum. The member does, however, have the right to use Computer Science House's facilities. The member must also pay dues. 
+\\* \\*
+Additional Note: No hazing shall occur at any time during the Selection Process in accordance with the New York State Hazing Laws.
+
+\bsection{Selection Process for First Quarter and Entering RIT Students}
+\bsubsection{The applicant submits an application to the Evaluations Committee for review. The preferred application time is during the previous academic year up to one week prior to the Department of Residence Life's Deadline for Acceptance of Entering Students into Special Interest Houses.}
+\bsubsection{The applicant participates in an informal interview with exactly three current Resident, Non-Resident, or Alumni members.}
+\bsubsection{The application and interview is reviewed by the Evaluations Committee to make a decision on either the granting or denial of membership in the House. The applicant is notified of the committee's decision within three weeks after the Department of Residence Life's Deadline for Acceptance of Entering Students into Special Interest Houses.}
+\bsubsection{The applicant moves onto the House Fall Quarter and is granted full membership privileges and responsibilities including House dues, combinations, and accounts. In addition to these privileges and responsibilities, the new member must participate in the Introductory Process.}
+\bsubsection{During the Introductory Evaluation Process, the new member's Introductory Process will be used to aid in evaluating their membership. If the new member has unsuccessfully completed the Introductory Process or has been found to be a detriment to House objectives or morale, the person's membership may be revoked pursuant to the Membership Revocation Process and the person would be asked to find alternative housing as soon as possible in accordance with all applicable Residence Life Policies regarding room changes. If the new member has completed the Introductory Process, passes the Introductory Evaluation Process and is not found to be a detriment to House objectives or morale, it is announced at the following House meeting and appropriate traditions are upheld.}
+Note: Most membership privileges do not initiate until successful completion of the introductory process. This means that until the member has passed the introductory evaluation, the member does NOT have the right to vote on House issues and does NOT count towards quorum. The member does, however, have the right to use Computer Science House's facilities. The member must also pay dues. 
+\\* \\*
+Additional Note: Any member who has not been subject to at least one Objective Evaluation (Spring Evaluations) cannot become an Alumni. Instead, if the member moves off floor, the member becomes a Non-Resident member. This is only true of persons who have not gone through the Objective Evaluation Process at some point during their Computer Science House membership.
+\\* \\*
+Additional Note: No hazing shall occur at any time during the Selection Process in accordance with the New York State Hazing Laws.
+
+\bsection{Selection Process for Honorary Members}
+\bsubsection{A House Member submits to the Evaluations Committee, a nomination for a person they feel is deserving of Honorary Membership.}
+\bsubsection{The Evaluations Committee performs some preliminary research on the candidate and presents the finding.}
+\bsubsection{The Executive Board decides whether or not to present the nomination to the House for a secret ballot House vote. If the Executive Board decides not to present the nomination to the House, the Selection Process ends and the candidate does not become an Honorary Member.}
+\bsubsection{The nomination is presented at a House meeting for discussion. Ballots are distributed and voting must remain open for a minimum of a forty-eight hour period. A quorum of two-thirds the number of all House members eligible to vote is required for the vote to be official. A vote equaling or exceeding two-thirds the number of all ballots cast is required for the candidate to be granted Honorary Membership.}
+\bsubsection{The candidate is notified of their selection as an Honorary Member and presented with the honor.}
+
+\bsection{Selection Process for Advisory Members}
+\bsubsection{A House Member submits to the Executive Board, a nomination for a person who they feel would benefit the House as an advisor during the period of time provided for by Article V, Section F, Subsection 2 Advisory Membership Selection.}
+\bsubsection{After the close of the nomination collection period, the Executive Board will arrange some means for the House to meet with the nominees.}
+\bsubsection{A discussion of the candidates will be held at the following House meeting.}
+\bsubsection{Ballots will then be distributed for a secret ballot House vote. The vote is a fifty-percent vote meaning a quorum of fifty percent of the number of all House members eligible to vote is required for the selections to be official. A vote for the selection of a specific candidate equaling or exceeding fifty percent of the number of ballots cast is required for the respective advisor candidate to be selected. If more than two advisors are selected via this process, the Executive Board may call for a revote amongst the candidates selected in order to reduce the number of advisors to a workable level. If this decision is made, the candidates selected in the first ballot become the nominees for the second ballot and Step Three and Four are repeated. This recast process may not be repeated a second time.}
+\bsubsection{All candidates selected are notified of their acceptance as House Advisors and asked to accept or decline the selection. If one or more selected candidates decline the position, the Executive Board may begin a selection process for additional advisors. Note that selected candidates who accept their selection remain selected, this additional selection process is only a means to bring the number of advisors up to a workable level. If the additional advisor selection process is initiated, repeat Steps One through Five with the original nominations plus any additional nominations.}
+
+\bsection{Evaluations Process}
+During the academic year, a House member is evaluated by two different processes. The first process, known as the Subjective Evaluation, is an informal evaluation designed to recognize an individual's contributions to the House, as well as checkpoint an individual's involvement with the House. The second process, known as the Objective Evaluation, is responsible for determining those individuals who will be offered residence on the House for the next academic year. These processes are separate from each other and should not interfere with one another, with the exception that the Subjective Evaluation is used to provide information for the Objective Evaluation.
+\\* \\*
+At the beginning of any Evaluation Process listed herein, the director of the Evaluation Committee must read the sections of the Computer Science House Constitution and By Laws used during the respective Evaluation Process.
+\bsubsection{Subjective Evaluation}
+The subjective evaluation process occurs during the academic year. It is performed mid Winter Quarter. The members of the Evaluations Committee, on a member by member basis, review the project logs for projects on which the member was involved, along with the member's activity worksheet and any other information the member chooses to provide. Each active House member will receive two Housing Points (see By-Law V, Section F). The Evaluation Committee may also award one bonus point if it decides that this house member has performed a large or exceptional amount of work for the house. The committee may also deduct one housing point from any House member who has not performed an acceptable amount of work for the house. The guidelines of the committees will be used as a guide in determining bonus and deducted points. No housing points will be awarded to members who do not return the Evaluation Activity Sheets.
+\\* \\*
+Any house member not living on-floor, for example, because a leave of absence for CO-OP, during the quarter of Subjective Evaluations will be evaluated by these criteria and awarded their share of housing points near the end of the quarter in which they return.
+\\* \\*
+A quorum of two-thirds of all Resident and Non-Resident (except for Introductory Process Participants) Members is required for the evaluation to be valid. Neither Absentee nor Proxy votes are allowed.
+\\* \\*
+All votes during the Subjective Evaluation Process must be Closed Ballot, Three Tiered Vote as defined in Article VIII, Section C, Subsection 4. The votes will be counted by the Evaluations Director and two randomly chosen vote counters from the Evaluation Process Participants.
+\bsubsection{Objective Evaluation}
+The objective evaluation process occurs once per academic year. It is performed as part of the Evaluation Process that takes place during the middle of spring quarter. The Evaluation Committee, on a member by member basis, ensures that each member has met the minimum requirements in order to be placed on the housing list for the following year. These requirements are detailed in Article V under expectations for each category of membership. These requirements must be completed by the seventh week of Spring Quarter when objective evaluations will occur.
+\\* \\*
+A quorum of two-thirds of all Resident and Non-Resident (except for Introductory Process Participants) Members is required for the evaluation to be valid. Neither Absentee nor Proxy votes are allowed.
+\\* \\*
+All votes during the Objective Evaluation Process must be Closed Ballot, Simple Majority Vote as defined in Article VIII, Section C, Subsection 1. The votes will be counted by the Evaluations Director and two randomly chosen vote counters from the Evaluation Process Participants.
+\bsubsection{Responsibilities of Members and Directors}
+Each member will be required to complete a form known as the activity worksheet for each Subjective Evaluation. This form is a list of what projects the member participated in since the last evaluation period, and should detail the level of involvement in each project. After being verified by the appropriate directors, the Evaluation Committee will include this list in its review of the member.
+\\* \\*
+\textbf{It is incumbent upon each House member to provide the Evaluation Committee with whatever information he or she feels is necessary to ensure an accurate evaluation.}
+\\* \\*
+For every House project there will be created a project log. It minimally contains information describing the project as well as the project leaders and participants, and should detail the participants involvement with the project. The project log is to be submitted to the appropriate director. If an appropriate director does not exist, the project log is to be submitted to the chairman. It is the director's responsibility to ensure that a project log is created and submitted for every House project that falls under that director's jurisdiction.
+\bsubsection{Appeals Process}
+If a member disagrees with the outcome of any evaluation, (e.g. is not asked to return to the House for the following year) and wishes to appeal the decision, he or she should immediately contact the Evaluations Director, the House Manager, or the Chairman. At the following Executive Board meeting, the member will present his appeal to the Board. The Executive Board can uphold, overturn or conditionally overturn the Evaluation Committee's decision with a secret ballot Two Thirds Vote as described in Article VIII, Section C, Subsection 3. If the decision is overturned or conditionally overturned, the member is to be added to the housing list immediately.
+\\* \\*
+If the member is still unsatisfied after being heard by the Executive Board, the appeal may be brought to the attention of the Area Coordinator.
+\bsubsection{Introductory Evaluation}
+The Introductory Evaluation process occurs once per academic year. It is performed as part of the Introductory Process that takes place during Fall Quarter, immediately after completion of the Introductory Process. On a member by member basis, this evaluation process decides if each member has successfully completed the Introductory Process Requirements. These requirements are listed in By-Law V, Section A. If the person has met the requirements, he is asked to become a Resident or Non-Resident member. Otherwise the person is asked to find alternative housing as soon as possible in accordance with all applicable Residence Life Policies regarding room changes.
+\\* \\*
+A quorum of two-thirds of all Resident and Non-Resident (except for Introductory Process Participants) Members is required for the evaluation to be valid. Neither Absentee nor Proxy votes are allowed.
+
+\bsection{Expectations of House Members}
+Each Member is required to pay House dues as stated in By-Law IV, Section A, attend all House Meetings, be an active participant in at least one committee, and attend at least twenty-five (25) committee meetings of which ten (10) are for the committee in which the member is an active participant. Each director will establish guidelines at the start of Fall Quarter, outlining explicit expectations of active participants. Members are also required to actively participate in a majority of House activities.
+\\* \\*
+The member must lead one major House project during the academic year. The member is required to submit a proposal for this major project to the Executive Board for approval. As an option to this requirement, the member may instead assist on a large number of House activities and projects without actually assuming a leadership role in the activity or project. However, it is to be understood in advance by the member that this option requires a great deal of participation throughout the year. This participation will be evaluated by the Executive Board.
+\bsection{Housing Priority System}
+The Housing Priority System is a means for determining the priority a House member has in a Housing issue such as Single Room Assignment, the Assignment of Available Housing, or the changing of status membership status to Resident Member. The member with top priority is the member with the most Housing Priority Points. Housing points are accumulated during the Subjective Evaluation described in By Law-IV, Section1.13, Subsection1.13.1.
+\\* \\*
+In the event of a tie, the members will be approached simultaneously and if they are unable to decide fairly between themselves, the assignment of priority will be made by random selection of the tied members.
+\bsection{Single Room Assignments}
+When a single room on the House becomes available it is offered to the member who carries the highest Housing Priority as defined in By-Law V, Section H, regardless of the member's current housing status. If that House member declines the option, it will be offered to the member with the next highest Housing Priority. This process continues until a member selects to move into the single room. Once in a single room, a House member retains the assignment until voluntarily giving it up. It should be noted that members selecting this option must agree to any additional charges applied by the Department of Residence Life for residing in a single room.
+\bsection{Double Rooms as Single Rooms}
+During the third week of each quarter, if there is no waiting list for resident membership to the House, any vacant rooms will be offered to House members as single rooms assignments according to the method as described in By-Law V, Section I. It should be noted that this does not mean members will be relocated into empty spaces so that the member with top priority is offered the single. This only applies if there is a totally vacant room.
+\end{document}
