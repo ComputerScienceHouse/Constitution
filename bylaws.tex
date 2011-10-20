@@ -8,20 +8,21 @@
 
 \documentclass{article}
 % The xr package allows external references
-\usepackage{xr}
+\usepackage{xr-hyper}
+\usepackage{hyperref}
 
 % This package is useful for debugging label problems
 % Comment out in final revision
 %\usepackage{showkeys}
 
 % Define the external document to be constitution for cross referencing purposes
-\externaldocument{constitution}
+\externaldocument{constitution}[https://github.com/ComputerScienceHouse/Constitution/blob/master/constitution.pdf?raw=true]
 
 % Title page information
 \title{Computer Science House By-Laws}
 \author{Computer Science House Executive Board}
 % Last Modified Date
-\newcommand{\datechanged}{Wednesday, October 19, 2010}
+\newcommand{\datechanged}{Wednesday, October 19, 2011}
 \date{\datechanged}
 
 % Fix margins
