@@ -18,3 +18,4 @@ clean:
 
 %.pdf %.log: %.tex
 	$(PDFLATEX) $<
+	$(PDFLATEX) $<
