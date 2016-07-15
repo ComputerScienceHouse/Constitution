@@ -6,3 +6,15 @@ The master branch's HEAD is the current legal constitution of CSH.
 
 You can demo changes etc on forks or branches though. In fact, the diff of this branch/fork and the head of constitution/master would make it extremely easy to illustrate the changes you've made relative to the current constitution, or for people to annotate your changes with comments, etc.
 
+# Contributing to the CSH Constitution
+
+## Requirements
+Must have make, and pdflatex installed
+
+## Step by Step
+
+1. Fork this repo
+2. Make a new branch on your fork
+3. Modify the `.tex` files with your changes
+4. Commit, Push and make a Pull Request
+5. Wait for vote to pass then merge changes
