@@ -17,5 +17,5 @@ clean:
 	$(RM) $(PDFFILES)
 
 %.pdf %.log: %.tex
-	$(PDFLATEX) $<
-	$(PDFLATEX) $<
+	$(PDFLATEX) `git log -1 --date=short --format=format:'\newcommand{\RevisionInfo}{Revision %h on %ad}'` '\input{$<}'
+	$(PDFLATEX) `git log -1 --date=short --format=format:'\newcommand{\RevisionInfo}{Revision %h on %ad}'` '\input{$<}'
