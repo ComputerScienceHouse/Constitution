@@ -12,8 +12,9 @@ people to annotate your changes with comments, etc.
 
 # Contributing to the CSH Constitution
 To make contributing easier, there are templates for both issues and pull
-requests provided in `.github`. Please use these whenever you would like to make
-changes to the constitution.
+requests. Please fill out the appropriate options in the description as you make
+the pull request so that a maintainer can more easily help get your change
+committed.
 
 ## Requirements
 Must have make, and pdflatex installed
