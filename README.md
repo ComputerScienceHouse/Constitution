@@ -28,7 +28,6 @@ Must have make, and pdflatex installed
 1. Fork this repo
 2. Make a new branch on your fork
 3. Modify the `.tex` files with your changes
-4. Compile the `.tex` files into `.pdf` files.
-5. Commit, Push and make a Pull Request
-6. Announce the amendment at House Meeting.
-7. Wait for vote to pass then merge changes
+4. Commit, Push and make a Pull Request
+5. Announce the amendment at House Meeting.
+6. Wait for vote to pass then merge changes
