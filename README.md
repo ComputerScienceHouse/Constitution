@@ -1,6 +1,10 @@
 # CSH Constitution
 The master branch's HEAD is the current legal constitution of CSH.
 
+Compiled version of both documents can be found below:
+####[Articles](https://constitution.csh.rit.edu/articles.pdf)
+####[By-Laws](https://constitution.csh.rit.edu/bylaws.pdf)
+
 ## Modifying the Constitution
 **Do not** make changes to master without their passing the proper house voting
 procedures. (At the very least, not text changes, anyways)
@@ -25,4 +29,5 @@ Must have make, and pdflatex installed
 2. Make a new branch on your fork
 3. Modify the `.tex` files with your changes
 4. Commit, Push and make a Pull Request
-5. Wait for vote to pass then merge changes
+5. Announce the amendment at House Meeting.
+6. Wait for vote to pass then merge changes
