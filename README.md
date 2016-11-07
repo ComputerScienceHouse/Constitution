@@ -20,8 +20,11 @@ requests. Please fill out the appropriate options in the description as you make
 the pull request or issue so a maintainer can more easily help get your change
 committed.
 
-## Requirements
+## Software Requirements
 Must have make, and pdflatex installed
+
+## Document Style
+One sentence, one line. In general, follow the pattern of the existing document.
 
 ## Step by Step
 
