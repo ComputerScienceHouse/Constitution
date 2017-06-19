@@ -7,16 +7,13 @@ PDFLATEX=pdflatex
 # Generated files
 PDFFILES=$(TEXFILES:.tex=.pdf)
 
-.PHONY: all clean pdf
+.PHONY: all clean
 
-all: pdf
-
-pdf: $(PDFFILES)
+all:
+	$(PDFLATEX) articles.tex `git log -1 --date=short --format=format:'\newcommand{\RevisionInfo}{Revision %h on %ad}'` '\input{$<}'
+	$(PDFLATEX) bylaws.tex `git log -1 --date=short --format=format:'\newcommand{\RevisionInfo}{Revision %h on %ad}'` '\input{$<}'
+	$(PDFLATEX) articles.tex `git log -1 --date=short --format=format:'\newcommand{\RevisionInfo}{Revision %h on %ad}'` '\input{$<}'
+	$(PDFLATEX) bylaws.tex `git log -1 --date=short --format=format:'\newcommand{\RevisionInfo}{Revision %h on %ad}'` '\input{$<}'
 
 clean:
 	$(RM) $(PDFFILES)
-
-# Build
-%.pdf %.log: %.tex
-	$(PDFLATEX) `git log -1 --date=short --format=format:'\newcommand{\RevisionInfo}{Revision %h on %ad}'` '\input{$<}'
-	$(PDFLATEX) `git log -1 --date=short --format=format:'\newcommand{\RevisionInfo}{Revision %h on %ad}'` '\input{$<}'
