@@ -18,7 +18,7 @@ people to annotate your changes with comments, etc.
 To make contributing easier, there are templates for both issues and pull
 requests. Please fill out the appropriate options in the description as you make
 the pull request or issue so a maintainer can more easily help get your change
-committed.
+committed.  See the [wiki guide](https://wiki.csh.rit.edu/wiki/Modifying_the_constitution) for more information.
 
 ## Software Requirements
 Must have make, and pdflatex installed
