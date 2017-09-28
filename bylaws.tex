@@ -11,6 +11,8 @@
 % The xr package allows external references
 \usepackage{xr-hyper}
 \usepackage{hyperref}
+% Reformat section titles
+\usepackage{titlesec}
 
 % This package is useful for debugging label problems
 % Comment out in final revision
@@ -39,9 +41,11 @@
 \newcommand{\bylaw}[1]{\section{#1} \label{#1}}
 \newcommand{\bsection}[1]{\subsection{#1} \label{#1}}
 \newcommand{\bsubsection}[1]{\subsubsection{#1} \label{#1}}
-\renewcommand{\thesection}{By-Law \Roman{section}}
-\renewcommand{\thesubsection}{Section \arabic{section}.\Alph{subsection}}
+\renewcommand{\thesection}{\Roman{section}}
+\renewcommand{\thesubsection}{\arabic{section}.\Alph{subsection}}
 \renewcommand{\thesubsubsection}{\arabic{section}.\Alph{subsection}.\arabic{subsubsection}}
+\titleformat{\section}{\normalfont\Large\bfseries}{By-Law \thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{Section \thesubsection}{1em}{}
 
 % Adding a \bsubsubsection -- I feel dirty
 \setcounter{secnumdepth}{5}
@@ -59,6 +63,8 @@
 \begin{document}
 % Title
 \maketitle
+
+\tableofcontents
 
 % BY-LAW I - INTRODUCTION
 \bylaw{Introduction}
