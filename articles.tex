@@ -11,6 +11,8 @@
 % The xr package allows external references
 \usepackage{xr-hyper}
 \usepackage{hyperref}
+% Reformat section titles
+\usepackage{titlesec}
 
 % This package is useful for debugging label problems
 % Comment out in final revision
@@ -39,9 +41,11 @@
 \newcommand{\article}[1]{\section{#1} \label{#1}}
 \newcommand{\asection}[1]{\subsection{#1} \label{#1}}
 \newcommand{\asubsection}[1]{\subsubsection{#1} \label{#1}}
-\renewcommand{\thesection}{Article \Roman{section}}
-\renewcommand{\thesubsection}{Section \arabic{section}.\Alph{subsection}}
+\renewcommand{\thesection}{\Roman{section}}
+\renewcommand{\thesubsection}{\arabic{section}.\Alph{subsection}}
 \renewcommand{\thesubsubsection}{\arabic{section}.\Alph{subsection}.\arabic{subsubsection}}
+\titleformat{\section}{\normalfont\Large\bfseries}{Article \thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{Section \thesubsection}{1em}{}
 
 % Adding an \asubsubsection -- I feel dirty
 \setcounter{secnumdepth}{5}
@@ -60,6 +64,8 @@
 % Title
 \maketitle
 
+\tableofcontents
+
 % ARTICLE I - INTRODUCTION
 \article{Introduction}
 
@@ -67,7 +73,7 @@
 The name of this Special Interest House shall be Computer Science House.
 
 \asection{Derivation of Authority}
-The Computer Science House shall recognize that it receives its right to function as a Special Interest House from the Department of Residence Life in conjunction with the Residence Halls Association.
+The Computer Science House shall recognize that it receives its right to function as a Special Interest House from the Center for Residence Life.
 
 \asection{House Objectives}
 The objectives of Computer Science House are:

@@ -11,6 +11,8 @@
 % The xr package allows external references
 \usepackage{xr-hyper}
 \usepackage{hyperref}
+% Reformat section titles
+\usepackage{titlesec}
 
 % This package is useful for debugging label problems
 % Comment out in final revision
@@ -39,9 +41,11 @@
 \newcommand{\bylaw}[1]{\section{#1} \label{#1}}
 \newcommand{\bsection}[1]{\subsection{#1} \label{#1}}
 \newcommand{\bsubsection}[1]{\subsubsection{#1} \label{#1}}
-\renewcommand{\thesection}{By-Law \Roman{section}}
-\renewcommand{\thesubsection}{Section \arabic{section}.\Alph{subsection}}
+\renewcommand{\thesection}{\Roman{section}}
+\renewcommand{\thesubsection}{\arabic{section}.\Alph{subsection}}
 \renewcommand{\thesubsubsection}{\arabic{section}.\Alph{subsection}.\arabic{subsubsection}}
+\titleformat{\section}{\normalfont\Large\bfseries}{By-Law \thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{Section \thesubsection}{1em}{}
 
 % Adding a \bsubsubsection -- I feel dirty
 \setcounter{secnumdepth}{5}
@@ -60,6 +64,8 @@
 % Title
 \maketitle
 
+\tableofcontents
+
 % BY-LAW I - INTRODUCTION
 \bylaw{Introduction}
 By-Laws will expand upon, while not redefining, Articles laid out in the Constitution.
@@ -68,7 +74,7 @@ By-Laws provide additional depth and definition to the processes and operations 
 % BY-LAW II - GENERAL OPERATIONS OF THE HOUSE
 \bylaw{General Operations of the House}
 \bsection{Standard Operating Session}
-The Standard Operating Session for Computer Science House is during the thirty weeks of Fall and Spring semesters.
+The Standard Operating Session for Computer Science House is during the twenty-eight weeks of Fall and Spring semesters.
 The Summer Sessions, Intersessions, Institute breaks, and all end of Semester Exam Weeks are considered non-standard operating sessions.
 Unless explicitly stated otherwise, the requirements and expectations defined in the constitution are for the Standard Operating Session.
 
@@ -186,7 +192,7 @@ Before the end of the Process, an Introductory Member is expected to:
 \item Attend all House meetings during the process
 \item Complete the Introductory Packet
 \item Be an active participant in the Introductory Project
-\item Attend at least one House directorship meeting for each week of the process
+\item Attend at least one House directorship meeting for each week of the process (including permanent and Ad-Hoc directorship meetings)
 \item Attend at least one House social event during the process
 \item Attend at least two seminars relating to computing or electronics
 \item Sign a copy of the Membership Agreement describing a House Member’s responsibilities and expectations
@@ -303,7 +309,7 @@ If the member is still unsatisfied after being heard by the Executive Board, the
 \bsection{Expectations of House Members}
 Each member is required to pay House dues as stated in \ref{Collection of House Dues}, attend all House Meetings, and attend at least twenty-five (25) of the permanent director meetings.
 \\* \\*
-The member must participate significantly in at least one major House project during the academic year.
+The member must participate significantly in at least one major project during the academic year.
 The member is required to submit a description for this major project to the Executive Board for approval.
 As an option to this requirement, the member may instead assist on a large number of House activities and projects.
 However, it is to be understood in advance by the member that this option requires a great deal of participation throughout the year.
