@@ -1,8 +1,8 @@
 % BEFORE CHANGES ARE MADE TO THIS DOCUMENT:
-% -References will be automatically updated if any part is added, deleted, etc. 
-%  However, if a sub part is moved to a different part, its references must be 
+% -References will be automatically updated if any part is added, deleted, etc.
+%  However, if a sub part is moved to a different part, its references must be
 %  changed.
-% -This document must be ratified by the House (as per the Constitution), 
+% -This document must be ratified by the House (as per the Constitution),
 %  then printed, signed, notarized, and placed in the House filing cabinet
 %  if changes are to be finalized.
 
@@ -11,6 +11,8 @@
 % The xr package allows external references
 \usepackage{xr-hyper}
 \usepackage{hyperref}
+% Reformat section titles
+\usepackage{titlesec}
 
 % This package is useful for debugging label problems
 % Comment out in final revision
@@ -36,12 +38,14 @@
 
 % Use \article for articles and \asection for sections of articles.
 % Automatically provide labels with the same article or section title.
-\newcommand{\bylaw}[1]{\section{#1} \label{#1}} 
+\newcommand{\bylaw}[1]{\section{#1} \label{#1}}
 \newcommand{\bsection}[1]{\subsection{#1} \label{#1}}
 \newcommand{\bsubsection}[1]{\subsubsection{#1} \label{#1}}
-\renewcommand{\thesection}{By-Law \Roman{section}}
-\renewcommand{\thesubsection}{Section \arabic{section}.\Alph{subsection}}
+\renewcommand{\thesection}{\Roman{section}}
+\renewcommand{\thesubsection}{\arabic{section}.\Alph{subsection}}
 \renewcommand{\thesubsubsection}{\arabic{section}.\Alph{subsection}.\arabic{subsubsection}}
+\titleformat{\section}{\normalfont\Large\bfseries}{By-Law \thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{Section \thesubsection}{1em}{}
 
 % Adding a \bsubsubsection -- I feel dirty
 \setcounter{secnumdepth}{5}
@@ -60,6 +64,8 @@
 % Title
 \maketitle
 
+\tableofcontents
+
 % BY-LAW I - INTRODUCTION
 \bylaw{Introduction}
 By-Laws will expand upon, while not redefining, Articles laid out in the Constitution.
@@ -68,9 +74,9 @@ By-Laws provide additional depth and definition to the processes and operations 
 % BY-LAW II - GENERAL OPERATIONS OF THE HOUSE
 \bylaw{General Operations of the House}
 \bsection{Standard Operating Session}
-The Standard Operating Session for Computer Science House is during the thirty weeks of Fall and Spring semesters.
+The Standard Operating Session for Computer Science House is during the twenty-eight weeks of Fall and Spring semesters.
 The Summer Sessions, Intersessions, Institute breaks, and all end of Semester Exam Weeks are considered non-standard operating sessions.
-Unless explicitly stated otherwise, the requirements and expectations deﬁned in the constitution are for the Standard Operating Session.
+Unless explicitly stated otherwise, the requirements and expectations defined in the constitution are for the Standard Operating Session.
 
 % BY-LAW III - OPERATIONS OF THE FINANCIAL DIRECTORSHIP
 \bylaw{Operations of the Financial Directorship}
@@ -90,7 +96,8 @@ If the Executive Board disagrees with the Financial Director, the Executive Boar
 If the Executive Board agrees with the Financial director, the member’s payment is considered delinquent and the member’s privileges are revoked until payment can be made.
 This process may be repeated indefinitely at the discretion of the Financial Director and the Executive Board.
 \\*\\*
-All dues must be collected in full before the annual membership evaluation (\ref{Membership Evaluation}). After this date, dues collection is suspended until the start of the next academic year.
+All dues must be collected in full before the annual membership evaluation (\ref{Membership Evaluation}).
+After this date, dues collection is suspended until the start of the next academic year.
 \bsection{Breakdown of Dues for Directorship Budgets}
 \begin{center}
 \begin{tabular}[c]{l c}
@@ -115,7 +122,7 @@ Accumulated & 10\% \\
 \end{center}
 
 The suggested total operational budget is \$8064.
-This figure is based on yearly estimated on-floor member dues (\$160 x 56 members = \$8960) minus the 10\% reserved for Accumulated (Accum).
+This figure is based on yearly estimated on-floor member dues (\$160 x 72 members = \$11520) minus the 10\% reserved for Accumulated (Accum).
 Money allocated for Accum and off-floor member dues is deposited into the CSH Account and saved.
 
 \bsection{Expenditure Approval}
@@ -131,21 +138,21 @@ For expenditures exceeding \$300 in total funding, a Complete Project Proposal m
 This proposal includes the project budget, inventory of required resources, and a timeline for completion.
 \\* \\*
 If an appropriate Directorship cannot be determined for an expenditure, it is to be brought up for approval at House meeting as a Miscellaneous expenditure and approved by a simple majority vote, regardless of the amount.
-This amount is to be directly subtracted from the general CSH account. 
+This amount is to be directly subtracted from the general CSH account.
 \\* \\*
 Funds allocated for a project not spent by the end of the Standard Operating Session \ref{Standard Operating Session} in which they were approved are voided, unless otherwise specified during the original voting process.
 
 % BY-LAW IV - OPERATIONS OF THE EVALUATIONS DIRECTORSHIP
 \bylaw{Operations of the Evaluations Directorship}
 \bsection{The Introductory Process}
-The Introductory Process is designed to provide an easy means for introductory members to meet existing House members, learn House history, demonstrate their involvement potential to House, and allow existing House members to evaluate them for Active Membership.
+The Introductory Process is designed to provide an easy means for Introductory Members to meet existing House members, learn House history, demonstrate their involvement potential to House, and allow existing House members to evaluate them for Active Membership.
 \bsubsection{The Evaluation Period}
 The Process lasts between six (6) and ten (10) weeks, starting when the Evaluations Director initiates it.
 The Executive Board may hold a closed ballot Simple Majority vote to extend the Introductory Process.
 \bsubsection{The Introductory Project}
 Introductory members are expected to demonstrate initiative and an ability to work well in a group environment through the Introductory Project.
 \bsubsection{Introductory Executive Board}
-An Introductory Executive Board is elected by the introductory members to lead and manage the project, represent the introductory project participants to House, and evaluate participants based on their contribution to the project.
+An Introductory Executive Board is elected by the Introductory Members to lead and manage the project, represent the introductory project participants to House, and evaluate participants based on their contribution to the project.
 The Introductory Executive Board consists of three members:
 \begin{itemize}
 	\item A President, who leads the project and acts as primary representative to House through weekly status reports at House Meeting.
@@ -153,11 +160,11 @@ The Introductory Executive Board consists of three members:
 	\item A Treasurer, who manages the finances for the project.
 \end{itemize}
 Introductory Members also elect a Secretary to take notes, and any number of additional non-voting leaders may be elected to take on project-specific tasks.
-\bsubsubsection{The Project} 
+\bsubsubsection{The Project}
 The Project is an annual fundraising event that takes place in the first semester of the Introductory Process.
 All of the proceeds go to a charity chosen in advance by the participants.
 The Executive Board is encouraged to discuss the Project and following an open ballot Simple Majority Vote, may choose to intervene in the Introductory Project if the Project does not appear to fulfill requirements.
-\bsubsubsection{Introductory Project Advisors} 
+\bsubsubsection{Introductory Project Advisors}
 The Evaluations Director may choose between one (1) and three (3) House members to be Introductory Project Advisors.
 The advisors assist in organizing the participants at the beginning of the Introductory Project and thereafter act as a resource to keep the Project running smoothly.
 \bsubsection{The Introductory Packet}
@@ -165,7 +172,7 @@ Each Introductory Process participant, after the first week, is given two (2) we
 \begin{itemize}
 	\item A signature from all Active/Introductory Resident members, each Executive Board member, and fifteen (15) of any combination of the following:
 	\begin{itemize}
-		\item Non-Resident members who have passed a Membership Evaluation 
+		\item Non-Resident members who have passed a Membership Evaluation
 		\item Alumni members (not including Non-Resident Executive Board members)
 		\item Honorary members
 		\item Advisory members
@@ -184,18 +191,22 @@ Before the end of the Process, an Introductory Member is expected to:
 \begin{itemize}
 \item Attend all House meetings during the process
 \item Complete the Introductory Packet
-\item Be an active participant in an the Introductory Project
-\item Attend at least one House directorship meeting for each week of the process
+\item Be an active participant in the Introductory Project
+\item Attend at least one House directorship meeting for each week of the process (including permanent and Ad-Hoc directorship meetings)
 \item Attend at least one House social event during the process
 \item Attend at least two seminars relating to computing or electronics
-\item Sign a copy of the Membership Agreement describing a House Member’s responsibilities and expectations.
+\item Sign a copy of the Membership Agreement describing a House Member’s responsibilities and expectations
 \end{itemize}
 
 \bsubsection{Introductory Evaluation}
-The Introductory Evaluation is the process by which House chooses which Introductory Members to extend an offer of full Resident or Non-Resident Membership. Occurs once per academic year as part of the Introductory Process.
-\bsubsubsection{Voting} 
-On a member by member basis, this evaluation process determines if each Introductory member has successfully completed the Introductory Process requirements \ref{Expectations of an Introductory Member}. A Simple Majority vote with a quorum of two-thirds of the Total Number of Possible Votes is required for the evaluation to be valid. Neither absentee nor proxy votes are allowed. House may choose any of the Outcomes for each member.
-\bsubsubsection{Outcomes} 
+The Introductory Evaluation is the process by which House chooses which Introductory Members to extend an offer of full Resident or Non-Resident Membership.
+Occurs once per academic year as part of the Introductory Process.
+\bsubsubsection{Voting}
+On a member by member basis, this evaluation process determines if each Introductory member has successfully completed the Introductory Process requirements \ref{Expectations of an Introductory Member}.
+A Simple Majority vote with a quorum of two-thirds of the Total Number of Possible Votes is required for the evaluation to be valid.
+Neither absentee nor proxy votes are allowed.
+House may choose any of the Outcomes for each member.
+\bsubsubsection{Outcomes}
 \renewcommand{\theenumi}{\alph{enumi}} % For this section, we want items to use letters
 \begin{enumerate}
 	\item Introductory Members may be offered Active Membership (\ref{Active Membership}) provided they meet the requirements described in \ref{Expectations of an Introductory Member}, at the discretion of House.
@@ -204,7 +215,8 @@ On a member by member basis, this evaluation process determines if each Introduc
 	\item An Introductory member may be given a conditional to complete as a means of making up for missing requirements.
 		A conditional may be proposed by any member present at the Introductory Evaluation and, if it is approved by the Evaluations Director, is then voted on by House.
 		Each conditional consists of a set of additional requirements a deadline for completing them.
-		When the deadline expires, the conditional will be brought before the Executive Board who will assess its completeness. A conditional member who does not meet these additional requirements forfeits membership.
+		When the deadline expires, the conditional will be brought before the Executive Board who will assess its completeness.
+		A conditional member who does not meet these additional requirements forfeits membership.
 \end{enumerate}
 \bsection{Selection Processes}
 \renewcommand{\theenumi}{\alph{enumi}} % For this section, we want items to use letters
@@ -212,7 +224,8 @@ On a member by member basis, this evaluation process determines if each Introduc
 \begin{enumerate}
 	\item The applicant submits an application to the Evaluations Director for review.
 	\item The applicant participates in an informal interview with exactly three current Active, Alumni, or Honorary Members.
-	\item The application materials are then reviewed at an Evaluations meeting and the members present vote on whether to accept the person as an introductory member.
+	\item The application materials are then reviewed at an Evaluations meeting.
+	Then a simple majority vote, of attending members, is held on whether or not to accept the person as an Introductory Member.
 \end{enumerate}
 Note: Most membership privileges do not initiate until successful completion of the introductory process.
 This means that until the member has passed the introductory evaluation, the member does NOT have the right to vote on House issues and does NOT count towards quorum.
@@ -249,8 +262,8 @@ Additional Note: No hazing shall occur at any time during the Selection Process 
 		After an announcement at House Meeting, during a 72-hour period, any House Member may submit a nomination.
 	\item After the close of the nomination collection period, the Executive Board will arrange some means for the House to meet with the nominees.
 	\item A discussion of the candidates will be held at the following House meeting.
-    \item Ballots are distributed for each nominee as a fifty-percent House vote defined in \ref{Fifty     
-        Percent}. Voting must remain open for a minimum of a forty-eight hour period. 
+	\item Ballots are distributed for each nominee as a fifty-percent House vote defined in \ref{Fifty Percent}.
+		Voting must remain open for a minimum of a forty-eight hour period.
 	\item All candidates selected are notified of their acceptance as House Advisors and asked to accept or decline the selection.
 \end{enumerate}
 
@@ -265,8 +278,9 @@ It is incumbent upon each House member to provide the Evaluation Director with w
 \bsubsection{Housing Points}
 All members may notify the evaluations director before the end of the academic year that they would like to receive two housing points for use in the next academic year.
 \bsubsection{Membership Evaluation}
-The Membership Evaluation process occurs once per academic year. It is performed as part of the Evaluation Process that takes place during the spring semester to comply with RIT Housing deadlines.
-\bsubsubsection{Voting} 
+The Membership Evaluation process occurs once per academic year.
+It is performed as part of the Evaluation Process that takes place during the spring semester to comply with RIT Housing deadlines.
+\bsubsubsection{Voting}
 A quorum of members, on a member by member basis, ensures that each Active Member has met the minimum requirements in order to continue as an Active Member in the following year.
 All Active Members will be held to the requirements and evaluated unless they have received an exemption from the Executive Board prior to the event.
 These requirements are detailed in Article V under expectations for each category of membership.
@@ -282,7 +296,8 @@ If the member has previously passed a Membership Evaluation they will move to Al
 In either case, the member forfeits their ability to be included on the following year’s roster.
 \\* \\*
 A member may be given a conditional to complete as a means of making up for missing requirements.
-A conditional may be proposed by any member present at the Evaluation. If the conditional is approved by the Evaluations Director, it is then voted on by House.
+A conditional may be proposed by any member present at the Evaluation.
+If the conditional is approved by the Evaluations Director, it is then voted on by House.
 Each conditional consists of a set of additional requirements a deadline for completing them.
 When the deadline expires, the conditional will be brought before the Executive Board who will assess its completeness.
 A conditional member who does not meet these additional requirements will have failed the evaluation.
@@ -292,10 +307,9 @@ If a member disagrees with the outcome of any evaluation, (e.g. is not asked to 
 If the member is still unsatisfied after being heard by the Executive Board, the appeal may be brought to the attention of the ResLife Advisor.
 
 \bsection{Expectations of House Members}
-Each member is required to pay House dues as stated in \ref{Collection of House Dues}, attend all House Meetings, and attend at least twenty-five (25) of the permanent director meetings.
-Members are also required to actively participate in a majority of House activities.
+Each member is required to pay House dues as stated in \ref{Collection of House Dues}, attend all House Meetings, and attend at least fifteen (15) of the House directorship meetings (including permanent and Ad-Hoc directorship meetings) for each Academic Semester in which they are an Active Member.
 \\* \\*
-The member must participate significantly in at least one major House project during the academic year.
+The member must participate significantly in at least one major project during the academic year.
 The member is required to submit a description for this major project to the Executive Board for approval.
 As an option to this requirement, the member may instead assist on a large number of House activities and projects.
 However, it is to be understood in advance by the member that this option requires a great deal of participation throughout the year.
@@ -333,7 +347,7 @@ This only applies if there is a totally vacant room.
 % BY-LAW V - OPERATIONS OF THE OPERATIONAL COMMUNICATIONS DIRECTORSHIP
 \bylaw{Operations of the Operational Communications Directorship}
 The Operational Communications Directorship is responsible for overseeing the implementation of maintenance and upgrades to the House Computer Systems Network.
-It  is a self-governing committee making decisions by a simply majority vote.
+It is a self-governing committee making decisions by a simply majority vote.
 Membership is composed of all Root Type Persons.
 
 \bsection{Selection of a Root Type Person}
@@ -341,7 +355,8 @@ Membership is composed of all Root Type Persons.
 \begin{enumerate}
 	\item Nominations are taken from the Root Type Persons and Prior Root Type Persons meeting the selection criteria in \ref{Qualifications of a Root Type Person}.
 	\item Each candidate is given a minimum of twenty-four hour period to accept or decline the nomination.
-	\item A list of all nominees who have accepted is presented to the Executive Board for approval. This Executive Board Meeting is closed to the Executive Board Members, Root Type Persons, and House members with explicit invitation from the Executive Board.
+	\item A list of all nominees who have accepted is presented to the Executive Board for approval.
+		This Executive Board Meeting is closed to the Executive Board Members, Root Type Persons, and House members with explicit invitation from the Executive Board.
 	\item If an Executive Board member is a candidate for the office in discussion, the member is absent and their vote is abstained.
 		A simple majority Executive Board vote, as described in \ref{Simple Majority}, is taken to determine whether the nominations of the Root Type Persons are accepted.
 \end{enumerate}
@@ -350,14 +365,16 @@ Membership is composed of all Root Type Persons.
 \renewcommand{\theenumi}{\alph{enumi}} % For this section, we want items to use letters
 \begin{enumerate}
 	\item Candidates must have been an On-Floor Active Member in good standing within the last twelve months, or been an Off-Floor Active Member and have lived on the floor within the last twelve months.
-	\item Candidates may be granted an exemption by current Root Type Persons. Such an exemption may be withdrawn at any time by the current Root Type Persons.
+	\item Candidates may be granted an exemption by current Root Type Persons.
+		Such an exemption may be withdrawn at any time by the current Root Type Persons.
 	\item Prior Root Type Persons are those members who are no longer current Active Members and have not been granted an extension by the current Root Type Persons.
 		Prior Root Type Persons are not guaranteed access to the current root passwords and other authentication tokens.
 	\item The current Root Type Persons may from time to time draft rules and regulations specifying the rights and privileges of Prior Root Type Persons.
 \end{enumerate}
 
 \bsection{Creation of Accounts}
-Root Type Persons have the authority to manage user accounts for House systems. Before members may receive an account they must:
+Root Type Persons have the authority to manage user accounts for House systems.
+Before members may receive an account they must:
 \renewcommand{\theenumi}{\alph{enumi}} % For this section, we want items to use letters
 \begin{enumerate}
 	\item Sign the Code of Conduct sheets pertaining to the responsible utilization of Computer Science House and Rochester Institute of Technology facilities.
@@ -365,9 +382,10 @@ Root Type Persons have the authority to manage user accounts for House systems. 
 \end{enumerate}
 
 \bsection{Code of Conduct}
-The Code of Conduct located at \href{https://github.com/ComputerScienceHouse/CodeOfConduct} is the canonical Code of Conduct for Computer Science House accounts.
+The Code of Conduct located at \url{https://github.com/ComputerScienceHouse/CodeOfConduct} is the canonical Code of Conduct for Computer Science House accounts.
 \\* \\*
-Members are bound to the Code of Conduct revision that they sign when initially creating their account. Members may sign a more recent revision of the Code of Conduct to update their agreement.
+Members are bound to the Code of Conduct revision that they sign when initially creating their account.
+Members may sign a more recent revision of the Code of Conduct to update their agreement.
 \bsubsection{Changes}
 The following process is used for making changes to the Code of Conduct document.
 \begin{enumerate}

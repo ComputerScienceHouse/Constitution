@@ -2,3 +2,5 @@
 *.log
 *.out
 *.synctex.gz
+*.py
+*.toc
