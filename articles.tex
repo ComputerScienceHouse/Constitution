@@ -48,9 +48,19 @@
 \titleformat{\subsection}{\normalfont\large\bfseries}{Section \thesubsection}{1em}{}
 
 % Adding an \asubsubsection -- I feel dirty
-\setcounter{secnumdepth}{5}
+%\setcounter{secnumdepth}{5}
 \newcommand{\asubsubsection}[1]{\paragraph{#1} \label{#1}}
 \renewcommand{\theparagraph}{\arabic{section}.\Alph{subsection}.\arabic{subsubsection}.\Alph{paragraph}}
+
+% Adding \a(sub){3,4}section during merge of bylaws and articles -- I feel _really_ dirty
+\setcounter{secnumdepth}{7}
+\setcounter{tocdepth}{7}
+\newcommand{\asubsubsubsection}[1]{\parindent=0em\subparagraph{#1} \label{#1}}
+\renewcommand{\thesubparagraph}{\arabic{section}.\Alph{subsection}.\arabic{subsubsection}.\Alph{paragraph}.\arabic{subparagraph}}
+
+\newcounter{asubsubsubsubsection}[subparagraph]
+\renewcommand{\theasubsubsubsubsection}{\arabic{section}.\Alph{subsection}.\arabic{subsubsection}.\Alph{paragraph}.\arabic{subparagraph}.\Alph{asubsubsubsubsection}}
+\newcommand{\asubsubsubsubsection}[1]{\parindent=0em\refstepcounter{asubsubsubsubsection}\par\textbf{\theasubsubsubsubsection\hspace{1em}#1 \label{#1}}}
 
 % Headings
 \pagestyle{myheadings}
