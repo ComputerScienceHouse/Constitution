@@ -31,7 +31,7 @@ Must have make, and pdflatex installed.
 
 Installing dependencies on debian
 
-`sudo apt install texlive make`
+`sudo apt install texlive texlive-formats-extra make`
 
 Installing depencdencies on fedora
 
