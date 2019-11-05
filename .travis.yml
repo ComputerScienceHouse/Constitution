@@ -1,0 +1,13 @@
+before_deploy: mkdir pdf && mv *.pdf pdf
+deploy:
+    access_key_id: $ACCESS_KEY
+    bucket: $BUCKET
+    edge: true
+    endpoint: $ENDPOINT
+    force_path_style: true
+    local_dir: pdf
+    provider: s3
+    secret_access_key: $SECRET_KEY
+install: sudo apt-get install -y texlive texlive-formats-extra
+language: minimal
+script: make
