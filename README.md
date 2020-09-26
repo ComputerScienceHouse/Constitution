@@ -1,9 +1,7 @@
 # CSH Constitution
 The master branch's HEAD is the current legal constitution of CSH.
 
-Compiled version of both documents can be found below:
-#### [Articles](https://constitution.csh.rit.edu/articles.pdf)
-#### [By-Laws](https://constitution.csh.rit.edu/bylaws.pdf)
+A compiled version of the document can be found [here](https://constitution.csh.rit.edu).
 
 ## Modifying the Constitution
 **Do not** make changes to master without their passing the proper house voting
