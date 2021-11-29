@@ -1,7 +1,7 @@
 FROM docker.io/debian:bullseye AS builder
 
 RUN apt-get update -y && \
-    apt-get install -y texlive texlive-formats-extra make
+    apt-get install -y texlive texlive-formats-extra make git
 
 WORKDIR /build/
 
