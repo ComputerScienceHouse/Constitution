@@ -9,7 +9,7 @@ COPY . /build/
 
 RUN make
 
-FROM docker.io/galenguyer/nginx:1.21.3
+FROM docker.io/galenguyer/nginx:mainline
 
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY --from=builder /build/constitution.pdf /usr/share/nginx/html/constitution.pdf
