@@ -9,10 +9,10 @@ COPY . .
 
 RUN make
 
-FROM docker.io/galenguyer/nginx:mainline
+FROM docker.io/nginxinc/nginx-unprivileged
 
-RUN chmod +rw -R /etc/nginx
-RUN chmod +rw -R /usr/share/
+#RUN chmod +rw -R /etc/nginx
+#RUN chmod +rw -R /usr/share/
 
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY --from=builder /out/constitution.pdf /usr/share/nginx/html/constitution.pdf
