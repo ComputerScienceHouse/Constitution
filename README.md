@@ -31,14 +31,14 @@ Installing dependencies on debian
 
 `sudo apt install texlive texlive-formats-extra make`
 
-Installing depencdencies on fedora
+Installing dependencies on fedora
 
 `sudo yum install texlive make`
 
 
 ## Compiling the Constitution
 Once required software is installed, simply run `make`.
-Running `make` will build and link the bylaws and articles properly.  
+Running `make` will build and link the articles properly.
 Review the PDF output to check for any errors before making a pull request.
 If additional commits are made, be sure to [rebase](https://git-scm.com/docs/git-rebase) down to one commit before submitting a pull request.
 
