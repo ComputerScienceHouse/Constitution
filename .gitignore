@@ -5,3 +5,5 @@
 *.py
 *.toc
 *.pdf
+*.fdb_latexmk
+*.fls
