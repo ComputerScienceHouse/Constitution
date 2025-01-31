@@ -31,10 +31,10 @@ Otherwise, create a new issue using the Constitution Issue template:
 - Mark whether the issue reflects a semantic or non-semantic change to the Constitution.
 - Include a short description of the issue. Include an excerpt of the language that is most in question.
 
-Once you've created a title and description for the issue, add any relevant lablels. Several labels are available for application. Some commonly used labels for issues are:
+Once you've created a title and description for the issue, add any relevant labels. Several labels are available for application. Some commonly used labels for issues are:
 
-- `needs-discussion`: for issues that are ready for discussion at committee meetings.
-- `discussion-issue`: for issues that contain longer-term discussions not ready for discussion at a committee meeting.
+- `needs-discussion`: for issues that should be discussed with Maintainers.
+- `discussion-issue`: for issues that contain longer-term discussions.
 - `question`: for issues where further information is requested.
 
 We'll leave the assignees section blank until the issue has been picked up and under development.
@@ -118,7 +118,7 @@ Once you've reviewed all the changes, under the `Files Changed` tab, hit the `Re
 
 5. Make any changes to `constitution.tex` and save the file once ready.
 
-6. Compile the LaTeX document. 
+6. Compile the LaTeX document. (when using texlive)
     
     ```
     make
@@ -147,7 +147,7 @@ Once you've reviewed all the changes, under the `Files Changed` tab, hit the `Re
     
     ```
     git push
-    # now go to github.com/rhochgraf21/Constitution > Pull Requests > New Pull Request
+    # now go to github.com/ComputerScienceHouse/Constitution > Pull Requests > New Pull Request
     ```
     
     For instructions on making a Pull Request, see [I Want To Fix An Issue](#i-want-to-fix-an-issue).
