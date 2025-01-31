@@ -43,7 +43,7 @@ Once your issue has a title, description, and labels, it is all set! Congrats ðŸ
 
 ## I Have a Question
 
-If you have a general question about the Constitution, ask a Maintainer (@constitutionalmaintainers on slack) or during a Committee meeting.
+If you have a general question about the Constitution, ask a Maintainer (@constitutionalmaintainers on slack).
 
 If you find a section of the Constitution that requires interpretation or clarification, we recommend the following:
 
@@ -77,7 +77,7 @@ Once you've reviewed all the changes, under the `Files Changed` tab, hit the `Re
 1. Create a local copy of the repository.
 
     ```
-    git clone https://github.com/rhochgraf21/Constitution.git
+    git clone https://github.com/ComputerScienceHouse/Constitution.git
     ```
 
 2. Check that you are not on an issue branch.
@@ -92,7 +92,9 @@ Once you've reviewed all the changes, under the `Files Changed` tab, hit the `Re
     git switch <branch_name>
     ```
 
-3. Install dependencies.
+3. Install dependencies. 
+
+    > This installs texlive on your computer. If you have another latex editor, you can skip this step and use that.
     
     Installing dependencies on debian
     
@@ -134,8 +136,6 @@ Once you've reviewed all the changes, under the `Files Changed` tab, hit the `Re
     See the [Commit Guidelines](#commit-guidelines) for more information on writing commit messages. 
 
 8. Make a Pull Request
-
-    > Double-check to ensure that your PR is made against the main branch of the `rhochgraf21/Constitution` project, not the upstream `ComputerScienceHouse/Constitution`.
     
     Using the github cli:
     
