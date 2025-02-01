@@ -66,6 +66,8 @@ Lastly, assign the PR to yourself, and add any relevant labels (for example - `r
 
 ## I Want To Review A PR
 
+> Note: only Maintainers can review PRs 
+
 Yo, that's awesome! First, add yourself as a reviewer on the PR.
 
 Next, review the changes made in the PR. If you have questions or concerns about any of the changes, submit a review by going to `Files Changed`, highlighting the line in question, and hitting the `+`.
@@ -75,6 +77,8 @@ Once you've reviewed all the changes, under the `Files Changed` tab, hit the `Re
 ## Guide - Making Changes To The Constitution
 
 1. Create a local copy of the repository.
+
+    > If you are not a Maintainer, make a Fork first 
 
     ```
     git clone https://github.com/ComputerScienceHouse/Constitution.git
@@ -149,6 +153,7 @@ Once you've reviewed all the changes, under the `Files Changed` tab, hit the `Re
     git push
     # now go to github.com/ComputerScienceHouse/Constitution > Pull Requests > New Pull Request
     ```
+    > Remember to set the upstream if in a Fork: git push -u origin <branch_name> 
     
     For instructions on making a Pull Request, see [I Want To Fix An Issue](#i-want-to-fix-an-issue).
 
