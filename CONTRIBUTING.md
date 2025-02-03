@@ -31,10 +31,10 @@ Otherwise, create a new issue using the Constitution Issue template:
 - Mark whether the issue reflects a semantic or non-semantic change to the Constitution.
 - Include a short description of the issue. Include an excerpt of the language that is most in question.
 
-Once you've created a title and description for the issue, add any relevant lablels. Several labels are available for application. Some commonly used labels for issues are:
+Once you've created a title and description for the issue, add any relevant labels. Several labels are available for application. Some commonly used labels for issues are:
 
-- `needs-discussion`: for issues that are ready for discussion at committee meetings.
-- `discussion-issue`: for issues that contain longer-term discussions not ready for discussion at a committee meeting.
+- `needs-discussion`: for issues that should be discussed with Maintainers.
+- `discussion-issue`: for issues that require some longer-term discussions.
 - `question`: for issues where further information is requested.
 
 We'll leave the assignees section blank until the issue has been picked up and under development.
@@ -43,7 +43,7 @@ Once your issue has a title, description, and labels, it is all set! Congrats ðŸ
 
 ## I Have a Question
 
-If you have a general question about the Constitution, ask a Maintainer (@constitutionalmaintainers on slack) or during a Committee meeting.
+If you have a general question about the Constitution, ask a Maintainer (@constitutionalmaintainers on slack).
 
 If you find a section of the Constitution that requires interpretation or clarification, we recommend the following:
 
@@ -66,6 +66,8 @@ Lastly, assign the PR to yourself, and add any relevant labels (for example - `r
 
 ## I Want To Review A PR
 
+> Note: only Maintainers can review PRs 
+
 Yo, that's awesome! First, add yourself as a reviewer on the PR.
 
 Next, review the changes made in the PR. If you have questions or concerns about any of the changes, submit a review by going to `Files Changed`, highlighting the line in question, and hitting the `+`.
@@ -76,8 +78,10 @@ Once you've reviewed all the changes, under the `Files Changed` tab, hit the `Re
 
 1. Create a local copy of the repository.
 
+    > If you are not a Maintainer, make a Fork first 
+
     ```
-    git clone https://github.com/rhochgraf21/Constitution.git
+    git clone https://github.com/ComputerScienceHouse/Constitution.git
     ```
 
 2. Check that you are not on an issue branch.
@@ -92,7 +96,9 @@ Once you've reviewed all the changes, under the `Files Changed` tab, hit the `Re
     git switch <branch_name>
     ```
 
-3. Install dependencies.
+3. Install dependencies. 
+
+    > This installs texlive on your computer. If you have another latex editor, you can skip this step and use that.
     
     Installing dependencies on debian
     
@@ -116,7 +122,7 @@ Once you've reviewed all the changes, under the `Files Changed` tab, hit the `Re
 
 5. Make any changes to `constitution.tex` and save the file once ready.
 
-6. Compile the LaTeX document. 
+6. Compile the LaTeX document. (when using texlive)
     
     ```
     make
@@ -134,8 +140,6 @@ Once you've reviewed all the changes, under the `Files Changed` tab, hit the `Re
     See the [Commit Guidelines](#commit-guidelines) for more information on writing commit messages. 
 
 8. Make a Pull Request
-
-    > Double-check to ensure that your PR is made against the main branch of the `rhochgraf21/Constitution` project, not the upstream `ComputerScienceHouse/Constitution`.
     
     Using the github cli:
     
@@ -147,8 +151,9 @@ Once you've reviewed all the changes, under the `Files Changed` tab, hit the `Re
     
     ```
     git push
-    # now go to github.com/rhochgraf21/Constitution > Pull Requests > New Pull Request
+    # now go to github.com/ComputerScienceHouse/Constitution > Pull Requests > New Pull Request
     ```
+    > Remember to set the upstream if in a Fork: git push -u origin <branch_name> 
     
     For instructions on making a Pull Request, see [I Want To Fix An Issue](#i-want-to-fix-an-issue).
 
