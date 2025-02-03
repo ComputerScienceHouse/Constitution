@@ -34,7 +34,7 @@ Otherwise, create a new issue using the Constitution Issue template:
 Once you've created a title and description for the issue, add any relevant labels. Several labels are available for application. Some commonly used labels for issues are:
 
 - `needs-discussion`: for issues that should be discussed with Maintainers.
-- `discussion-issue`: for issues that contain longer-term discussions.
+- `discussion-issue`: for issues that require some longer-term discussions.
 - `question`: for issues where further information is requested.
 
 We'll leave the assignees section blank until the issue has been picked up and under development.
